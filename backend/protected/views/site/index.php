@@ -1,20 +1,26 @@
 <?php
 /* @var $this SiteController */
 
-$this->pageTitle=Yii::app()->name;
+$this->pageTitle = Yii::app()->name;
+
+$cardList = array(
+	array('title' => 'Passageiro (YII)', 'info' => 'Página desenvolvida totalmente com YII 1.1.28', 'url' => 'index.php?r=passageiro'),
+	array('title' => 'Passageiro (Vue3 + YII)', 'info' => 'Página desenvolvida com YII 1.1.28 para models e controlers, e Vue3 + PrimeVue para as Views.', 'url' => ''),
+);
 ?>
 
-<h1>Welcome to <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>
-
-<p>Congratulations! You have successfully created your Yii application.</p>
-
-<p>You may change the content of this page by modifying the following two files:</p>
-<ul>
-	<li>View file: <code><?php echo __FILE__; ?></code></li>
-	<li>Layout file: <code><?php echo $this->getLayoutFile('main'); ?></code></li>
+<ul class="list-unstyled d-flex justify-content-center gap-2">
+	<?php foreach ($cardList as $card): ?>
+		<li>
+			<a href="<?php echo $card['url']; ?>" class="text-dark text-decoration-none d-block h-100">
+				<div class="card h-100" style="width: 18rem;">
+					<div class="card-body d-flex flex-column gap-2 justify-content-between">
+						<h5 class="card-title"><?php echo $card['title']; ?></h5>
+						<p class="card-text m-0"><?php echo $card['info']; ?></p>
+						<button href="#" class="btn btn-primary">Ver página</button>
+					</div>
+				</div>
+			</a>
+		</li>
+	<?php endforeach; ?>
 </ul>
-
-<p>For more details on how to further develop this application, please read
-the <a href="https://www.yiiframework.com/doc/">documentation</a>.
-Feel free to ask in the <a href="https://www.yiiframework.com/forum/">forum</a>,
-should you have any questions.</p>

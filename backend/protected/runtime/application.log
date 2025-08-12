@@ -153,3 +153,306 @@ HTTP_REFERER=http://localhost:8888/index.php?r=passageiro/create
 2025/08/12 20:54:09 [warning] [application] Failed to set unsafe attribute "data_hora_status" of "Passageiro".
 in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/PassageiroController.php (60)
 in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php (13)
+2025/08/12 23:03:05 [error] [exception.CException] CException: Property "SiteController.navigationLinks" is not defined. in /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CComponent.php:130
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/views/layouts/main.php(34): CComponent->__get('navigationLinks')
+#1 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(126): require('/Users/admin/gi...')
+#2 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/admin/gi...', Array, true)
+#3 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/Users/admin/gi...', Array, true)
+#4 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#5 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#6 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(215): COutputProcessor->run()
+#7 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(309): CBaseController->endWidget('CContentDecorat...')
+#8 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#9 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(126): require('/Users/admin/gi...')
+#10 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/admin/gi...', Array, true)
+#11 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(787): CBaseController->renderFile('/Users/admin/gi...', Array, true)
+#12 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/SiteController.php(32): CController->render('index')
+#13 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#14 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#16 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(282): CController->run('index')
+#18 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#19 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#20 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php?r=site/index
+HTTP_REFERER=http://localhost:8888/index.php?r=passageiro/admin
+---
+2025/08/12 23:04:06 [error] [exception.CException] CException: Property "SiteController.navigationLinks" is not defined. in /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CComponent.php:130
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/views/layouts/main.php(38): CComponent->__get('navigationLinks')
+#1 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(126): require('/Users/admin/gi...')
+#2 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/admin/gi...', Array, true)
+#3 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/Users/admin/gi...', Array, true)
+#4 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#5 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#6 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(215): COutputProcessor->run()
+#7 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(309): CBaseController->endWidget('CContentDecorat...')
+#8 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#9 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(126): require('/Users/admin/gi...')
+#10 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/admin/gi...', Array, true)
+#11 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(787): CBaseController->renderFile('/Users/admin/gi...', Array, true)
+#12 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/SiteController.php(32): CController->render('index')
+#13 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#14 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#16 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(282): CController->run('index')
+#18 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#19 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#20 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php?r=site/index
+HTTP_REFERER=http://localhost:8888/index.php?r=passageiro/admin
+---
+2025/08/12 23:04:07 [error] [exception.CException] CException: Property "SiteController.navigationLinks" is not defined. in /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CComponent.php:130
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/views/layouts/main.php(38): CComponent->__get('navigationLinks')
+#1 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(126): require('/Users/admin/gi...')
+#2 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/admin/gi...', Array, true)
+#3 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/Users/admin/gi...', Array, true)
+#4 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#5 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#6 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(215): COutputProcessor->run()
+#7 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(309): CBaseController->endWidget('CContentDecorat...')
+#8 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#9 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(126): require('/Users/admin/gi...')
+#10 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/admin/gi...', Array, true)
+#11 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(787): CBaseController->renderFile('/Users/admin/gi...', Array, true)
+#12 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/SiteController.php(32): CController->render('index')
+#13 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#14 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#16 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(282): CController->run('index')
+#18 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#19 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#20 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php?r=site/index
+HTTP_REFERER=http://localhost:8888/index.php?r=passageiro/admin
+---
+2025/08/12 23:04:07 [error] [exception.CException] CException: Property "SiteController.navigationLinks" is not defined. in /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CComponent.php:130
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/views/layouts/main.php(38): CComponent->__get('navigationLinks')
+#1 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(126): require('/Users/admin/gi...')
+#2 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/admin/gi...', Array, true)
+#3 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/Users/admin/gi...', Array, true)
+#4 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#5 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#6 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(215): COutputProcessor->run()
+#7 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(309): CBaseController->endWidget('CContentDecorat...')
+#8 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#9 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(126): require('/Users/admin/gi...')
+#10 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/admin/gi...', Array, true)
+#11 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(787): CBaseController->renderFile('/Users/admin/gi...', Array, true)
+#12 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/SiteController.php(32): CController->render('index')
+#13 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#14 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#16 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(282): CController->run('index')
+#18 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#19 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#20 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php?r=site/index
+HTTP_REFERER=http://localhost:8888/index.php?r=passageiro/admin
+---
+2025/08/12 23:04:19 [error] [exception.CException] CException: Property "SiteController.navigationLinks" is not defined. in /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CComponent.php:130
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/views/layouts/main.php(38): CComponent->__get('navigationLinks')
+#1 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(126): require('/Users/admin/gi...')
+#2 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/admin/gi...', Array, true)
+#3 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/Users/admin/gi...', Array, true)
+#4 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#5 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#6 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(215): COutputProcessor->run()
+#7 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(309): CBaseController->endWidget('CContentDecorat...')
+#8 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#9 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(126): require('/Users/admin/gi...')
+#10 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/admin/gi...', Array, true)
+#11 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(787): CBaseController->renderFile('/Users/admin/gi...', Array, true)
+#12 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/SiteController.php(32): CController->render('index')
+#13 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#14 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#16 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(282): CController->run('index')
+#18 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#19 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#20 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php?r=site/index
+HTTP_REFERER=http://localhost:8888/index.php?r=passageiro/admin
+---
+2025/08/12 23:04:20 [error] [exception.CException] CException: Property "SiteController.navigationLinks" is not defined. in /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CComponent.php:130
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/views/layouts/main.php(38): CComponent->__get('navigationLinks')
+#1 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(126): require('/Users/admin/gi...')
+#2 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/admin/gi...', Array, true)
+#3 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/Users/admin/gi...', Array, true)
+#4 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#5 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#6 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(215): COutputProcessor->run()
+#7 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(309): CBaseController->endWidget('CContentDecorat...')
+#8 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#9 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(126): require('/Users/admin/gi...')
+#10 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/admin/gi...', Array, true)
+#11 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(787): CBaseController->renderFile('/Users/admin/gi...', Array, true)
+#12 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/SiteController.php(32): CController->render('index')
+#13 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#14 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#16 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(282): CController->run('index')
+#18 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#19 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#20 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php?r=site/index
+HTTP_REFERER=http://localhost:8888/index.php?r=passageiro/admin
+---
+2025/08/12 23:04:20 [error] [exception.CException] CException: Property "SiteController.navigationLinks" is not defined. in /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CComponent.php:130
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/views/layouts/main.php(38): CComponent->__get('navigationLinks')
+#1 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(126): require('/Users/admin/gi...')
+#2 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/admin/gi...', Array, true)
+#3 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/Users/admin/gi...', Array, true)
+#4 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#5 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#6 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(215): COutputProcessor->run()
+#7 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(309): CBaseController->endWidget('CContentDecorat...')
+#8 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#9 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(126): require('/Users/admin/gi...')
+#10 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/admin/gi...', Array, true)
+#11 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(787): CBaseController->renderFile('/Users/admin/gi...', Array, true)
+#12 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/SiteController.php(32): CController->render('index')
+#13 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#14 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#16 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(282): CController->run('index')
+#18 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#19 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#20 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php?r=site/index
+HTTP_REFERER=http://localhost:8888/index.php?r=passageiro/admin
+---
+2025/08/12 23:04:20 [error] [exception.CException] CException: Property "SiteController.navigationLinks" is not defined. in /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CComponent.php:130
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/views/layouts/main.php(38): CComponent->__get('navigationLinks')
+#1 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(126): require('/Users/admin/gi...')
+#2 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/admin/gi...', Array, true)
+#3 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/Users/admin/gi...', Array, true)
+#4 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#5 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#6 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(215): COutputProcessor->run()
+#7 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(309): CBaseController->endWidget('CContentDecorat...')
+#8 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#9 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(126): require('/Users/admin/gi...')
+#10 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/admin/gi...', Array, true)
+#11 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(787): CBaseController->renderFile('/Users/admin/gi...', Array, true)
+#12 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/SiteController.php(32): CController->render('index')
+#13 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#14 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#16 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(282): CController->run('index')
+#18 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#19 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#20 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php?r=site/index
+HTTP_REFERER=http://localhost:8888/index.php?r=passageiro/admin
+---
+2025/08/12 23:04:24 [error] [exception.CException] CException: Property "SiteController.navigationLinks" is not defined. in /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CComponent.php:130
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/views/layouts/main.php(38): CComponent->__get('navigationLinks')
+#1 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(126): require('/Users/admin/gi...')
+#2 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/admin/gi...', Array, true)
+#3 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/Users/admin/gi...', Array, true)
+#4 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#5 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#6 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(215): COutputProcessor->run()
+#7 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(309): CBaseController->endWidget('CContentDecorat...')
+#8 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#9 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(126): require('/Users/admin/gi...')
+#10 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/admin/gi...', Array, true)
+#11 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(787): CBaseController->renderFile('/Users/admin/gi...', Array, true)
+#12 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/SiteController.php(32): CController->render('index')
+#13 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#14 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#16 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(282): CController->run('')
+#18 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#19 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#20 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php
+---
+2025/08/12 23:07:55 [error] [exception.CException] CException: Property "SiteController.navigationLinks" is not defined. in /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CComponent.php:130
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/views/layouts/main.php(52): CComponent->__get('navigationLinks')
+#1 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(126): require('/Users/admin/gi...')
+#2 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/admin/gi...', Array, true)
+#3 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/Users/admin/gi...', Array, true)
+#4 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#5 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#6 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(215): COutputProcessor->run()
+#7 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(309): CBaseController->endWidget('CContentDecorat...')
+#8 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#9 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(126): require('/Users/admin/gi...')
+#10 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/admin/gi...', Array, true)
+#11 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(787): CBaseController->renderFile('/Users/admin/gi...', Array, true)
+#12 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/SiteController.php(32): CController->render('index')
+#13 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#14 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#16 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(282): CController->run('')
+#18 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#19 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#20 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php
+---
+2025/08/12 23:07:56 [error] [exception.CException] CException: Property "SiteController.navigationLinks" is not defined. in /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CComponent.php:130
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/views/layouts/main.php(52): CComponent->__get('navigationLinks')
+#1 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(126): require('/Users/admin/gi...')
+#2 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/admin/gi...', Array, true)
+#3 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/Users/admin/gi...', Array, true)
+#4 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#5 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#6 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(215): COutputProcessor->run()
+#7 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(309): CBaseController->endWidget('CContentDecorat...')
+#8 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#9 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(126): require('/Users/admin/gi...')
+#10 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/admin/gi...', Array, true)
+#11 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(787): CBaseController->renderFile('/Users/admin/gi...', Array, true)
+#12 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/SiteController.php(32): CController->render('index')
+#13 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#14 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#16 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(282): CController->run('')
+#18 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#19 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#20 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php
+---
+2025/08/12 23:33:54 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "passageiroviews". in /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(141): CWebApplication->runController('passageiroviews')
+#1 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=passageiroviews
+HTTP_REFERER=http://localhost:8888/
+---
