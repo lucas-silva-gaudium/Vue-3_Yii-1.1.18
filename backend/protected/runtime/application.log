@@ -94,3 +94,62 @@ Stack trace:
 #15 {main}
 ---
 2025/08/12 19:51:28 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'vue3_yii1.1.28.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2025/08/12 20:51:09 [warning] [application] Failed to set unsafe attribute "data_hora_status" of "Passageiro".
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/PassageiroController.php (60)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php (13)
+2025/08/12 20:51:09 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1364 Field 'data_hora_status' doesn't have a default value. The SQL statement executed was: INSERT INTO `passageiro` (`status`, `nome`, `nascimento`, `email`, `telefone`, `obs`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5).
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/PassageiroController.php (61)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php (13)
+2025/08/12 20:51:09 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1364 Field 'data_hora_status' doesn't have a default value. The SQL statement executed was: INSERT INTO `passageiro` (`status`, `nome`, `nascimento`, `email`, `telefone`, `obs`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5) in /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/db/ar/CActiveRecord.php(1083): CDbCommand->execute()
+#1 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/db/ar/CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/PassageiroController.php(61): CActiveRecord->save()
+#3 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/actions/CInlineAction.php(49): PassageiroController->actionCreate()
+#4 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(291): CFilterChain->run()
+#11 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(282): CController->run('create')
+#13 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(141): CWebApplication->runController('passageiro/crea...')
+#14 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=passageiro/create
+HTTP_REFERER=http://localhost:8888/index.php?r=passageiro/create
+---
+2025/08/12 20:52:13 [warning] [application] Failed to set unsafe attribute "data_hora_status" of "Passageiro".
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/PassageiroController.php (60)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php (13)
+2025/08/12 20:52:13 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1364 Field 'data_hora_status' doesn't have a default value. The SQL statement executed was: INSERT INTO `passageiro` (`status`, `nome`, `nascimento`, `email`, `telefone`, `obs`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5).
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/PassageiroController.php (61)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php (13)
+2025/08/12 20:52:13 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1364 Field 'data_hora_status' doesn't have a default value. The SQL statement executed was: INSERT INTO `passageiro` (`status`, `nome`, `nascimento`, `email`, `telefone`, `obs`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5) in /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/db/ar/CActiveRecord.php(1083): CDbCommand->execute()
+#1 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/db/ar/CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/PassageiroController.php(61): CActiveRecord->save()
+#3 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/actions/CInlineAction.php(49): PassageiroController->actionCreate()
+#4 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(291): CFilterChain->run()
+#11 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(282): CController->run('create')
+#13 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(141): CWebApplication->runController('passageiro/crea...')
+#14 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=passageiro/create
+HTTP_REFERER=http://localhost:8888/index.php?r=passageiro/create
+---
+2025/08/12 20:54:09 [warning] [application] Failed to set unsafe attribute "data_hora_status" of "Passageiro".
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/PassageiroController.php (60)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php (13)
