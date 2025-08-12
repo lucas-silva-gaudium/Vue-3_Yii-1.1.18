@@ -456,3 +456,27 @@ Stack trace:
 REQUEST_URI=/index.php?r=passageiroviews
 HTTP_REFERER=http://localhost:8888/
 ---
+2025/08/12 23:45:06 [error] [php] Undefined variable $data (/Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/views/passageiro/create.php:11)
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(126): require()
+#1 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(95): PassageiroController->renderInternal()
+#2 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(872): PassageiroController->renderFile()
+#3 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(785): PassageiroController->renderPartial()
+#4 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/PassageiroController.php(66): PassageiroController->render()
+#5 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/actions/CInlineAction.php(49): PassageiroController->actionCreate()
+#6 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(134): PassageiroController->runAction()
+#8 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#10 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CInlineFilter.php(58): PassageiroController->filterAccessControl()
+#11 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#12 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(291): CFilterChain->run()
+#13 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(265): PassageiroController->runActionWithFilters()
+#14 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(282): PassageiroController->run()
+#15 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#17 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=passageiro/create
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/views/passageiro/create.php (11)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/PassageiroController.php (66)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php (13)
