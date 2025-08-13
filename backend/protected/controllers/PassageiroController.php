@@ -128,7 +128,11 @@ class PassageiroController extends Controller
 
 	public function actionAdminVue()
 	{
-		$this->render('adminVue');
+		$model = new Passageiro('search');
+		$model->unsetAttributes();
+		$this->render('adminVue', array(
+			'model' => $model
+		));
 	}
 
 	/**
