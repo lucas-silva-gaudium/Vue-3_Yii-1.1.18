@@ -7,4 +7,4 @@ $this->breadcrumbs = array('Passageiros' => array('index'), 'Versão Vue');
     <h1>Passageiros (Versão Vue.js)</h1>
 </div>
 
-<table-passageiros></table-passageiros>
+<v-table></v-table>
