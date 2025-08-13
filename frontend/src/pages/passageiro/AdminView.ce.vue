@@ -3,12 +3,9 @@ import { onMounted, ref } from 'vue';
 import DataTable from 'primevue/datatable';
 import Column from 'primevue/column';
 import Button from 'primevue/button';
+import { usePrimeVue } from '@/composables/usePrimeVue';
 
-// const passageiros = ref([
-//   { id: 1, nome: 'Fulano da Silva', email: 'fulano@teste.com', status: 'A' },
-//   { id: 2, nome: 'Ciclana de Souza', email: 'ciclana@teste.com', status: 'I' },
-//   { id: 3, nome: 'Beltrano Oliveira', email: 'beltrano@teste.com', status: 'A' },
-// ]);
+usePrimeVue();
 
 const passageiros = ref([]);
 onMounted(() => {
@@ -23,7 +20,9 @@ onMounted(() => {
 <template>
   <div class="passageiro-view__header">
     <Button class="passageiro-view__button--blue" label="Pesquisa avançada" />
-    <Button label="+" href="ndex.php?r=passageiro/createvue" />
+    <a href="index.php?r=passageiro/createvue">
+      <Button label="+" />
+    </a>
   </div>
 
   <div class="primevue-component-wrapper">

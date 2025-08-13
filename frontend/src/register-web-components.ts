@@ -1,13 +1,19 @@
-import { defineCustomElement, type Component } from 'vue';
+import { defineCustomElement, createApp } from 'vue';
+import PrimeVue from 'primevue/config';
+import type { Component } from 'vue';
 
 const modules = import.meta.glob<{ default: Component }>('./pages/**/*.ce.vue');
-
-console.log('Módulos encontrados pelo Vite:', modules);
 
 export async function registerCustomElements() {
   for (const path in modules) {
     const module = await modules[path]();
-    const webComponent = module.default;
+    const component = module.default;
+
+    // Criar app temporário e aplicar PrimeVue
+    const app = createApp(component);
+    app.use(PrimeVue);
+
+    const customElement = defineCustomElement(component);
 
     const name =
       'v-' +
@@ -17,11 +23,8 @@ export async function registerCustomElements() {
         .replace(/\//g, '-')
         .toLowerCase();
 
-    console.log(`Registrando componente: <${name}> a partir do arquivo: ${path}`);
-
     if (!customElements.get(name)) {
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      customElements.define(name, defineCustomElement(webComponent as any));
+      customElements.define(name, customElement);
     }
   }
 }
