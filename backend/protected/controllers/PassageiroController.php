@@ -126,6 +126,11 @@ class PassageiroController extends Controller
 		));
 	}
 
+	public function actionAdminVue()
+	{
+		$this->render('adminVue');
+	}
+
 	/**
 	 * Manages all models.
 	 */

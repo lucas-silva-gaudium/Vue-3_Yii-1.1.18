@@ -1,6 +1,7 @@
 <?php /* @var $this Controller */
 $navigationLinks = array(
-	'passageiro' => 'index.php?r=passageiro/admin'
+	'passageiro (Yii)' => 'index.php?r=passageiro/admin',
+	'passageiro (Vue)' => 'index.php?r=passageiro/adminvue',
 );
 ?>
 <!DOCTYPE html>

@@ -5,7 +5,7 @@ $this->pageTitle = Yii::app()->name;
 
 $cardList = array(
 	array('title' => 'Passageiro (YII)', 'info' => 'Página desenvolvida totalmente com YII 1.1.28', 'url' => 'index.php?r=passageiro/admin'),
-	array('title' => 'Passageiro (Vue3 + YII)', 'info' => 'Página desenvolvida com YII 1.1.28 para models e controlers, e Vue3 + PrimeVue para as Views.', 'url' => ''),
+	array('title' => 'Passageiro (Vue3 + YII)', 'info' => 'Página desenvolvida com YII 1.1.28 para models e controlers, e Vue3 + PrimeVue para as Views.', 'url' => 'index.php?r=passageiro/adminvue'),
 );
 ?>
 
