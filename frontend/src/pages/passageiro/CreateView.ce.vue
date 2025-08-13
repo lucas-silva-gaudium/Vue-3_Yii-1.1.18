@@ -1,8 +1,9 @@
 <script setup lang="ts">
-
 import { reactive } from 'vue';
 import { usePrimeVue } from '@/composables/usePrimeVue';
+import { useYiiFormSubmit } from '@/composables/useYiiFormSubmit';
 import type { PassageiroForm } from '../types/passageiro.types';
+
 import Button from 'primevue/button';
 import Calendar from 'primevue/calendar';
 import Dropdown from 'primevue/dropdown';
@@ -10,6 +11,15 @@ import InputText from 'primevue/inputtext';
 import Textarea from 'primevue/textarea';
 
 usePrimeVue();
+
+const props = defineProps({
+  submitUrl: {
+    type: String,
+    required: true,
+  },
+});
+
+const { submit } = useYiiFormSubmit();
 
 const formState: PassageiroForm = reactive({
   nome: '',
@@ -25,9 +35,21 @@ const statusOptions = [
   { label: 'Inativo', value: 'I' }
 ];
 
+const formatarData = (date: Date | null): string | null => {
+  if (!date) return null;
+  const pad = (num: number) => num.toString().padStart(2, '0');
+  return `${date.getFullYear()}-${pad(date.getMonth() + 1)}-${pad(date.getDate())}`;
+};
+
 const handleSubmit = () => {
-  console.log('Dados do formulário a serem enviados:', formState);
-  alert('Formulário enviado! Verifique o console do navegador para ver os dados.');
+
+  const dadosParaEnvio = {
+    ...formState,
+    nascimento: formatarData(formState.nascimento),
+  };
+
+
+  submit(props.submitUrl, dadosParaEnvio, 'Passageiro');
 };
 </script>
 

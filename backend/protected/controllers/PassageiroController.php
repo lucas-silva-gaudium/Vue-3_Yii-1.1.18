@@ -137,7 +137,10 @@ class PassageiroController extends Controller
 
 	public function actionCreateVue()
 	{
-		$this->render('createVue');
+		$submitUrl = $this->createUrl('passageiro/create');
+		$this->render('createVue', array(
+			'submitUrl' => $submitUrl,
+		));
 	}
 
 	/**
