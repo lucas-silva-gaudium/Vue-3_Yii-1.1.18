@@ -8,9 +8,6 @@ $this->breadcrumbs = array('Passageiros' => array('index'), 'Versão Vue');
 </div>
 
 <v-passageiro-admin></v-passageiro-admin>
-<v-passageiro-create></v-passageiro-create>
-<v-passageiro-index></v-passageiro-index>
-<v-passageiro-update></v-passageiro-update>
 
 <!-- <script type="module" src="<?php echo Yii::app()->request->baseUrl; ?>/js/index.ce.js"></script> -->
 <script type="module" src="http://localhost:5173/@vite/client"></script>
