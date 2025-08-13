@@ -111,9 +111,18 @@ class PassageiroController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider = new CActiveDataProvider('Passageiro');
-		$this->render('index', array(
-			'dataProvider' => $dataProvider,
+		// $dataProvider = new CActiveDataProvider('Passageiro');
+		// $this->render('index', array(
+		// 	'dataProvider' => $dataProvider,
+		// ));
+
+		$model = new Passageiro('search');
+		$model->unsetAttributes();
+		if (isset($_GET['Passageiro']))
+			$model->attributes = $_GET['Passageiro'];
+
+		$this->render('admin', array(
+			'model' => $model,
 		));
 	}
 

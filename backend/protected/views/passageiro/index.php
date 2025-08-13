@@ -12,9 +12,10 @@ $this->menu=array(
 );
 ?>
 
-<h1>Passageiros</h1>
+<h1>Passageiros dss</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,
 	'itemView'=>'_view',
 )); ?>
+

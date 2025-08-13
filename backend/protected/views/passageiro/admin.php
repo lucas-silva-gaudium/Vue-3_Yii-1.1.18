@@ -50,46 +50,56 @@ $('.search-form form').submit(function(){
 		[
 			'name' => 'id',
 			'headerHtmlOptions' => ['class' => 'text-dark text-decoration-none'],
-			// 'filterHtmlOptions' => array('class' => 'bg-warning'),
 		],
 		[
 			'name' => 'nome',
 			'headerHtmlOptions' => ['class' => 'text-dark text-decoration-none'],
-			// 'filterHtmlOptions' => array('class' => 'bg-warning'),
 		],
 		[
 			'name' => 'nascimento',
 			'headerHtmlOptions' => ['class' => 'text-dark text-decoration-none'],
-			// 'filterHtmlOptions' => array('class' => 'bg-warning'),
 		],
 		[
 			'name' => 'email',
 			'headerHtmlOptions' => ['class' => 'text-dark text-decoration-none'],
-			// 'filterHtmlOptions' => array('class' => 'bg-warning'),
 		],
 		[
 			'name' => 'telefone',
 			'headerHtmlOptions' => ['class' => 'text-dark text-decoration-none'],
-			// 'filterHtmlOptions' => array('class' => 'bg-warning'),
 		],
 		[
 			'name' => 'data_hora_status',
 			'headerHtmlOptions' => ['class' => 'text-dark text-decoration-none'],
-			// 'filterHtmlOptions' => array('class' => 'bg-warning'),
 		],
-		/*
-		'status',
-		'obs',
-		*/
-		array(
+		[
 			'name' => 'status',
 			'htmlOptions' => array('class' => 'text-dark text-decoration-none'),
-			// 'filterHtmlOptions' => ['class' => 'bg-warning']
-		),
+		],
 		array(
-			'class' => 'CButtonColumn',
-			'htmlOptions' => array('class' => 'actions-cell'),
+			'header' => 'Ações',
+			'type' => 'raw',
+			'htmlOptions' => array('style' => 'width: 120px; text-align: center;', 'class' => 'text-dark text-decoration-none'),
+			'value' => function ($data) {
+				$urlView = Yii::app()->controller->createUrl('view', array('id' => $data->id));
+				$urlUpdate = Yii::app()->controller->createUrl('update', array('id' => $data->id));
+				$urlDelete = Yii::app()->controller->createUrl('delete', array('id' => $data->id));
 
+				$btnView = "<a href='{$urlView}' class='btn btn-sm btn-outline-info' title='Visualizar'><i class='bi bi-eye-fill'></i></a>";
+				$btnUpdate = "<a href='{$urlUpdate}' class='btn btn-sm btn-outline-primary' title='Editar'><i class='bi bi-pencil-fill'></i></a>";
+
+				$btnDelete = CHtml::link(
+					'<i class="bi bi-trash-fill"></i>',
+					$urlDelete,
+					array(
+						'class' => 'btn btn-sm btn-outline-danger',
+						'title' => 'Deletar',
+						'confirm' => 'Tem certeza que deseja deletar este item?',
+					)
+				);
+
+				return "<div class='d-flex justify-content-center gap-1'>{$btnView} {$btnUpdate} {$btnDelete}</div>";
+			},
 		),
+
 	),
 )); ?>
