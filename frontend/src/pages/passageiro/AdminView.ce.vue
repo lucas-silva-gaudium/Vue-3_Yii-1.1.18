@@ -23,7 +23,7 @@ onMounted(() => {
 <template>
   <div class="passageiro-view__header">
     <Button class="passageiro-view__button--blue" label="Pesquisa avançada" />
-    <Button label="+" />
+    <Button label="+" href="ndex.php?r=passageiro/createvue" />
   </div>
 
   <div class="primevue-component-wrapper">
