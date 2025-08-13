@@ -1,14 +1,23 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { onMounted, ref } from 'vue';
 import DataTable from 'primevue/datatable';
 import Column from 'primevue/column';
 import Button from 'primevue/button';
 
-const passageiros = ref([
-  { id: 1, nome: 'Fulano da Silva', email: 'fulano@teste.com', status: 'A' },
-  { id: 2, nome: 'Ciclana de Souza', email: 'ciclana@teste.com', status: 'I' },
-  { id: 3, nome: 'Beltrano Oliveira', email: 'beltrano@teste.com', status: 'A' },
-]);
+// const passageiros = ref([
+//   { id: 1, nome: 'Fulano da Silva', email: 'fulano@teste.com', status: 'A' },
+//   { id: 2, nome: 'Ciclana de Souza', email: 'ciclana@teste.com', status: 'I' },
+//   { id: 3, nome: 'Beltrano Oliveira', email: 'beltrano@teste.com', status: 'A' },
+// ]);
+
+const passageiros = ref([]);
+onMounted(() => {
+  if (!window.PASSAGEIROS_DATA) {
+    return;
+  }
+
+  passageiros.value = window.PASSAGEIROS_DATA;
+});
 </script>
 
 <template>
@@ -23,7 +32,10 @@ const passageiros = ref([
     <DataTable :value="passageiros" tableStyle="min-width: 50rem">
       <Column field="id" header="ID"></Column>
       <Column field="nome" header="Nome"></Column>
+      <Column field="nascimento" header="Nascimento"></Column>
       <Column field="email" header="Email"></Column>
+      <Column field="telefone" header="Telefone"></Column>
+      <Column field="data_hora_status" header="Data e Hora do Status"></Column>
       <Column field="status" header="Status"></Column>
       <Column header="Ações">
         <template #body>
