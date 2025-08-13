@@ -1,6 +1,6 @@
 <template>
   <div class="meu-componente-vue">
-    <p>Esse é o meu componente vtable</p>
+    <p class="bg-primary">Esse é o meu componente vtable</p>
   </div>
 </template>
 

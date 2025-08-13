@@ -1,12 +1,16 @@
 // import { createApp } from 'vue'
 // import { createPinia } from 'pinia'
-import { defineCustomElement } from 'vue';
-import App from './App.vue';
+// import { defineCustomElement } from 'vue';
+// import PassageiroAdminView from './pages/passageiro/PassageiroAdminView.ce.vue';
 
-const VTable = defineCustomElement(App);
+import { registerCustomElements } from './register-web-components';
 
-customElements.define('v-table', VTable);
+// const VPassageiroAdmin = defineCustomElement(PassageiroAdminView);
+//
+// customElements.define('v-passageiro-admin', VPassageiroAdmin);
 
 // const app = createApp(App)
 // app.use(createPinia())
 // app.mount('#app')
+
+registerCustomElements();
