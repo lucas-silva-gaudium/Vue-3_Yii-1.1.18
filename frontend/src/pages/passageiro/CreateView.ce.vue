@@ -1,20 +1,20 @@
 <script setup lang="ts">
+
 import { reactive } from 'vue';
 import { usePrimeVue } from '@/composables/usePrimeVue';
-
+import type { PassageiroForm } from '../types/passageiro.types';
 import Button from 'primevue/button';
-import InputText from 'primevue/inputtext';
 import Calendar from 'primevue/calendar';
 import Dropdown from 'primevue/dropdown';
+import InputText from 'primevue/inputtext';
 import Textarea from 'primevue/textarea';
-import InputMask from 'primevue/inputmask';
 
 usePrimeVue();
 
-const formState = reactive({
+const formState: PassageiroForm = reactive({
   nome: '',
   email: '',
-  nascimento: '',
+  nascimento: null,
   telefone: '',
   status: null,
   obs: ''
@@ -56,7 +56,7 @@ const handleSubmit = () => {
         </div>
         <div class="passageiro-create__col">
           <label for="telefone" class="passageiro-create__label">Telefone</label>
-          <InputMask id="telefone" class="passageiro-create__data" v-model="formState.telefone" mask="+99-99-999999999"
+          <InputText id="telefone" class="passageiro-create__data" v-model="formState.telefone" type="tel"
             placeholder="+55-11-999999999" />
         </div>
         <div class="passageiro-create__col">
