@@ -143,6 +143,17 @@ class PassageiroController extends Controller
 		));
 	}
 
+	public function actionUpdateVue($id)
+	{
+		$model = $this->loadModel($id);
+		$submitUrl = $this->createUrl('passageiro/update', array('id' => $model->id));
+
+		$this->render('updateVue', array(
+			'model' => $model,
+			'submitUrl' => $submitUrl
+		));
+	}
+
 	/**
 	 * Manages all models.
 	 */

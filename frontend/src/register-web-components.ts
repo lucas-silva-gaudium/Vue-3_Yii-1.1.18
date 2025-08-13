@@ -1,5 +1,4 @@
-import { defineCustomElement, createApp } from 'vue';
-import PrimeVue from 'primevue/config';
+import { defineCustomElement } from 'vue';
 import type { Component } from 'vue';
 
 const modules = import.meta.glob<{ default: Component }>('./pages/**/*.ce.vue');

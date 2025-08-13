@@ -1,6 +1,6 @@
 export type StatusOptions = 'A' | 'I' | null;
 
-export interface PassageiroForm {
+export interface IPassageiroForm {
   nome: string;
   email: string;
   nascimento: Date | null;

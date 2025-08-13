@@ -38,8 +38,13 @@ onMounted(() => {
       <Column field="status" header="Status"></Column>
       <Column header="Ações">
         <template #body>
-          <Button icon="pi pi-pencil" class="p-button-rounded p-button-success p-mr-2" />
-          <Button icon="pi pi-trash" class="p-button-rounded p-button-danger" />
+          <div class="passageiro-view__actions">
+            <Button icon="pi pi-pencil"
+              class="passageiro-view__button passageiro-view__button--small p-button-success p-mr-2" />
+            <Button icon="pi pi-pencil"
+              class="passageiro-view__button passageiro-view__button--small p-button-info p-mr-2" />
+            <Button icon="pi pi-trash" class="passageiro-view__button passageiro-view__button--small p-button-danger" />
+          </div>
         </template>
       </Column>
     </DataTable>
@@ -58,8 +63,10 @@ onMounted(() => {
     margin-bottom: 1rem;
   }
 
-  .p-button {
-    display: none;
+  &__actions {
+    align-items: center;
+    display: flex;
+    gap: 4px;
   }
 
   &__button {
@@ -72,6 +79,12 @@ onMounted(() => {
         background-color: #0b5ed7;
         border-color: #0a58ca;
       }
+    }
+
+    &--small.p-button {
+      height: fit-content;
+      padding: 4px 8px;
+      width: fit-content;
     }
   }
 }
