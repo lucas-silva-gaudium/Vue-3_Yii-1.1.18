@@ -9,10 +9,6 @@ export async function registerCustomElements() {
     const module = await modules[path]();
     const component = module.default;
 
-    // Criar app temporário e aplicar PrimeVue
-    const app = createApp(component);
-    app.use(PrimeVue);
-
     const customElement = defineCustomElement(component);
 
     const name =
