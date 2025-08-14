@@ -149,6 +149,7 @@ class PassageiroController extends Controller
 		$submitUrl = $this->createUrl('passageiro/update', array('id' => $model->id));
 
 		$this->render('updateVue', array(
+			'userId' => $id,
 			'model' => $model,
 			'submitUrl' => $submitUrl
 		));
