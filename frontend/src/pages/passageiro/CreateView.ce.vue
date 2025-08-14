@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, reactive } from 'vue';
+import { computed, onMounted, reactive, ref } from 'vue';
 import { useYiiFormSubmit } from '@/composables/useYiiFormSubmit';
 import { useVuelidate } from '@vuelidate/core';
 import { required, email, helpers } from '@vuelidate/validators';
@@ -77,6 +77,17 @@ const handleSubmit = async () => {
 };
 
 usePrimeVue();
+
+onMounted(() => {
+  if (window.PASSAGEIROS_DATA) {
+    const dadosIniciais = window.PASSAGEIROS_DATA;
+    Object.assign(formState, dadosIniciais);
+
+    if (dadosIniciais.nascimento) {
+      formState.nascimento = new Date(`${dadosIniciais.nascimento}T00:00:00`);
+    }
+  }
+});
 </script>
 
 <template>
