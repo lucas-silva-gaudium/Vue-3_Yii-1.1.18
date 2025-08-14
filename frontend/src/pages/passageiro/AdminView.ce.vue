@@ -4,6 +4,7 @@ import DataTable from 'primevue/datatable';
 import Column from 'primevue/column';
 import Button from 'primevue/button';
 import { usePrimeVue } from '@/composables/usePrimeVue';
+import { useYiiFormSubmit } from '@/composables/useYiiFormSubmit';
 
 usePrimeVue();
 
@@ -15,6 +16,14 @@ onMounted(() => {
 
   passageiros.value = window.PASSAGEIROS_DATA;
 });
+const { submit } = useYiiFormSubmit();
+
+const handleDelete = (id: number) => {
+  if (confirm('Tem certeza que deseja deletar este passageiro?')) {
+    const deleteUrl = `index.php?r=passageiro/delete&id=${id}`;
+    submit(deleteUrl, {}, 'Passageiro');
+  }
+};
 </script>
 
 <template>
@@ -37,16 +46,20 @@ onMounted(() => {
       <Column field="data_hora_status" header="Data e Hora do Status"></Column>
       <Column field="status" header="Status"></Column>
       <Column header="Ações">
-        <template #body>
-          <div class="passageiro-view__actions">
-            <Button icon="pi pi-pencil"
-              class="passageiro-view__button passageiro-view__button--small p-button-success p-mr-2" />
-            <Button icon="pi pi-pencil"
-              class="passageiro-view__button passageiro-view__button--small p-button-info p-mr-2" />
-            <Button icon="pi pi-trash" class="passageiro-view__button passageiro-view__button--small p-button-danger" />
+        <template #body="slotProps">
+          <div class="d-flex justify-content-center gap-2">
+            <a :href="`index.php?r=passageiro/view&id=${slotProps.data.id}`">
+              <Button icon="pi pi-eye" severity="info" rounded />
+            </a>
+
+            <a :href="`index.php?r=passageiro/updateVue&id=${slotProps.data.id}`">
+              <Button icon="pi pi-pencil" severity="success" rounded />
+            </a>
+
+            <Button icon="pi pi-trash" severity="danger" rounded @click="handleDelete(slotProps.data.id)" />
           </div>
         </template>
-      </Column>
+        </Column>
     </DataTable>
   </div>
 </template>

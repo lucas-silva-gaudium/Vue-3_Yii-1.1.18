@@ -10,6 +10,7 @@ import Calendar from 'primevue/calendar';
 import Dropdown from 'primevue/dropdown';
 import InputText from 'primevue/inputtext';
 import Textarea from 'primevue/textarea';
+import { usePrimeVue } from '@/composables/usePrimeVue';
 
 const props = defineProps({
   submitUrl: {
@@ -74,6 +75,8 @@ const handleSubmit = async () => {
 
   submit(props.submitUrl, dadosParaEnvio, 'Passageiro');
 };
+
+usePrimeVue();
 </script>
 
 <template>
@@ -133,6 +136,9 @@ const handleSubmit = async () => {
   </div>
 </template>
 
+<style lang="scss">
+@use "@/styles/main.scss" as *;
+</style>
 <style scoped lang="scss">
 .passageiro-create {
   &__row {
