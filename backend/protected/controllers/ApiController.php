@@ -28,9 +28,45 @@ class ApiController extends CController
             Yii::app()->end();
         }
 
+        $jsonPaylooad = file_get_contents('php://input');
+        $jsonData = CJSON::decode($jsonPaylooad, true);
+
+        if ($jsonData === null) {
+            http_response_code(400);
+            echo CJSON::encode(array(
+                'success' => false,
+                'message' => 'Dados inválidos.',
+                'erros' => array('JSON de entrada inválida ou ausente'),
+            ));
+            Yii::app()->end();
+        }
+
+        $erros = array();
+        $passageiroId = isset($jsonData['passageiro']['id']) ? $jsonData['passageiro']['id'] : null;
+        if ($passageiroId) {
+            $passageiro = Passageiro::model()->findByPk($passageiroId);
+            if ($passageiro === null) {
+                $erros[] = "Passageiro com ID {$passageiroId} não encontrado.";
+            } elseif ($passageiro->status !== 'A') {
+                $erros[] = 'Passageiro não está com a conta ativa.';
+            }
+        } else {
+            $erros[] = 'Passageiro ID não informado.';
+        }
+
+        if (!empty($erros)) {
+            http_response_code(400);
+            echo CJSON::encode(array(
+                'success' => false,
+                'erros' => $erros,
+            ));
+            Yii::app()->end();
+        }
+
         echo CJSON::encode(array(
             'success' => true,
-            'message' => 'Corrida solicitada com sucesso (Autenticado).',
+            'message' => 'JSON recebido com sucesso!',
+            'dados_recebidos' => $jsonData,
         ));
 
         Yii::app()->end();
