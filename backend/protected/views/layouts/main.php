@@ -1,6 +1,7 @@
 <?php /* @var $this Controller */
 $navigationLinks = array(
-	'passageiro' => 'index.php?r=passageiro/admin'
+	'passageiro' => 'index.php?r=passageiro/admin',
+	'motorista' => 'index.php?r=motorista/admin'
 );
 ?>
 <!DOCTYPE html>
@@ -17,7 +18,7 @@ $navigationLinks = array(
 	<![endif]-->
 	<!-- <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css"> -->
 	<!-- <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css"> -->
-	
+
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
