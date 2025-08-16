@@ -957,3 +957,23 @@ Stack trace:
 #5 {main}
 REQUEST_URI=/index.php?r=api/solicitarCorrida?api-token=AUTH_TOKEN_070725
 ---
+2025/08/16 21:36:09 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "finalizarCorrida". in /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php:486
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(270): CController->missingAction('finalizarCorrid...')
+#1 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(282): CController->run('finalizarCorrid...')
+#2 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(141): CWebApplication->runController('api/finalizarCo...')
+#3 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=api/finalizarCorrida
+---
+2025/08/16 21:36:28 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "finalizarCorrida". in /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php:486
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(270): CController->missingAction('finalizarCorrid...')
+#1 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(282): CController->run('finalizarCorrid...')
+#2 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(141): CWebApplication->runController('api/finalizarCo...')
+#3 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=api/finalizarCorrida
+---
