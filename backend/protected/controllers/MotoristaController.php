@@ -59,6 +59,7 @@ class MotoristaController extends Controller
 		if (isset($_POST['Motorista'])) {
 			$model->attributes = $_POST['Motorista'];
 			$model->data_hora_status = date('Y-m-d H:i:s');
+			$model->status = 'A';
 
 			if ($model->save())
 				$this->redirect(array('view', 'id' => $model->id));
@@ -77,14 +78,14 @@ class MotoristaController extends Controller
 	public function actionUpdate($id)
 	{
 		$model = $this->loadModel($id);
-		$model->data_hora_status = date('Y-m-d H:i:s');
-
-
+		
+		
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
-
+		
 		if (isset($_POST['Motorista'])) {
 			$model->attributes = $_POST['Motorista'];
+			$model->data_hora_status = date('Y-m-d H:i:s');
 			if ($model->save())
 				$this->redirect(array('view', 'id' => $model->id));
 		}
@@ -92,6 +93,20 @@ class MotoristaController extends Controller
 		$this->render('update', array(
 			'model' => $model,
 		));
+	}
+
+	public function actionUpdateStatus($id)
+	{
+		$model = $this->loadModel($id);
+		if (isset($_POST['Motorista']['status'])) {
+			$model->status = $_POST['Motorista']['status'];
+			$model->data_hora_status = date('Y-m-d H:i:s');
+
+			if ($model->saveAttributes(array('status', 'data_hora_status'))) {
+				$this->redirect(array('admin'));
+			}
+		}
+		$this->render('updateStatus', array('model' => $model));
 	}
 
 	/**
