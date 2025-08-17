@@ -2,32 +2,46 @@
 /* @var $this PassageiroController */
 /* @var $model Passageiro */
 
-$this->breadcrumbs=array(
-	'Passageiros'=>array('index'),
+$this->breadcrumbs = array(
+	'Passageiros' => array('index'),
 	$model->id,
-);
-
-$this->menu=array(
-	array('label'=>'List Passageiro', 'url'=>array('index')),
-	array('label'=>'Create Passageiro', 'url'=>array('create')),
-	array('label'=>'Update Passageiro', 'url'=>array('update', 'id'=>$model->id)),
-	array('label'=>'Delete Passageiro', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Passageiro', 'url'=>array('admin')),
 );
 ?>
 
-<h1>View Passageiro #<?php echo $model->id; ?></h1>
+<div class="d-flex justify-content-between align-items-center">
+	<h1>View Passageiro #<?php echo $model->id; ?></h1>
+	<?php echo CHtml::link(
+		'<i class="bi bi-arrow-left"></i> Voltar para lista',
+		array('admin'),
+		array('class' => 'btn btn-outline-primary')
+	); ?>
+</div>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
-	'data'=>$model,
-	'attributes'=>array(
+	'data' => $model,
+	'cssFile' => false,
+	'htmlOptions' => array(
+		'class' => 'table table-striped table-bordered detail-view',
+	),
+	'attributes' => array(
 		'id',
 		'nome',
 		'nascimento',
 		'email',
 		'telefone',
-		'status',
-		'data_hora_status',
+		array(
+			'name' => 'status',
+			'type' => 'raw',
+			'value' => CHtml::tag(
+				'span',
+				array('class' => $model->status == 'A' ? 'badge bg-success' : 'badge bg-secondary'),
+				$model->status == 'A' ? 'Ativo' : 'Inativo'
+			),
+		),
+		array(
+			'name' => 'data_hora_status',
+			'value' => Yii::app()->dateFormatter->formatDateTime($model->data_hora_status, "long", "short"),
+		),
 		'obs',
 	),
 )); ?>

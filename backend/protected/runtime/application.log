@@ -1079,3 +1079,771 @@ Stack trace:
 #12 {main}
 REQUEST_URI=/index.php?r=motorista/updateStatus
 ---
+2025/08/17 02:28:27 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "corridas/admin". in /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(141): CWebApplication->runController('corridas/admin')
+#1 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=corridas/admin
+---
+2025/08/17 02:31:05 [warning] [application] Failed to set unsafe attribute "passageiro_nome" of "Corrida".
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php (128)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php (13)
+2025/08/17 02:31:05 [warning] [application] Failed to set unsafe attribute "motorista_nome" of "Corrida".
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php (128)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php (13)
+2025/08/17 02:31:07 [warning] [application] Failed to set unsafe attribute "passageiro_nome" of "Corrida".
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php (128)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php (13)
+2025/08/17 02:31:07 [warning] [application] Failed to set unsafe attribute "motorista_nome" of "Corrida".
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php (128)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php (13)
+2025/08/17 02:31:09 [warning] [application] Failed to set unsafe attribute "passageiro_nome" of "Corrida".
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php (128)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php (13)
+2025/08/17 02:31:09 [warning] [application] Failed to set unsafe attribute "motorista_nome" of "Corrida".
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php (128)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php (13)
+2025/08/17 02:31:11 [warning] [application] Failed to set unsafe attribute "passageiro_nome" of "Corrida".
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php (128)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php (13)
+2025/08/17 02:31:11 [warning] [application] Failed to set unsafe attribute "motorista_nome" of "Corrida".
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php (128)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php (13)
+2025/08/17 02:31:12 [warning] [application] Failed to set unsafe attribute "passageiro_nome" of "Corrida".
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php (128)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php (13)
+2025/08/17 02:31:12 [warning] [application] Failed to set unsafe attribute "motorista_nome" of "Corrida".
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php (128)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php (13)
+2025/08/17 02:31:15 [warning] [application] Failed to set unsafe attribute "passageiro_nome" of "Corrida".
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php (128)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php (13)
+2025/08/17 02:31:15 [warning] [application] Failed to set unsafe attribute "motorista_nome" of "Corrida".
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php (128)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php (13)
+2025/08/17 02:34:39 [error] [exception.Error] Error: Using $this when not in object context in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/models/Corrida.php:5
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/YiiBase.php(463): include()
+#1 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php(125): YiiBase::autoload('Corrida')
+#2 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/actions/CInlineAction.php(49): CorridaController->actionAdmin()
+#3 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(291): CFilterChain->run()
+#10 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(282): CController->run('admin')
+#12 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(141): CWebApplication->runController('corrida/admin')
+#13 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php?r=corrida/admin
+---
+2025/08/17 02:35:13 [error] [exception.Error] Error: Using $this when not in object context in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/models/Corrida.php:5
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/YiiBase.php(463): include()
+#1 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php(125): YiiBase::autoload('Corrida')
+#2 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/actions/CInlineAction.php(49): CorridaController->actionAdmin()
+#3 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(291): CFilterChain->run()
+#10 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(282): CController->run('admin')
+#12 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(141): CWebApplication->runController('corrida/admin')
+#13 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php?r=corrida/admin
+---
+2025/08/17 02:35:14 [error] [exception.Error] Error: Using $this when not in object context in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/models/Corrida.php:5
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/YiiBase.php(463): include()
+#1 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php(125): YiiBase::autoload('Corrida')
+#2 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/actions/CInlineAction.php(49): CorridaController->actionAdmin()
+#3 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(291): CFilterChain->run()
+#10 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(282): CController->run('admin')
+#12 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(141): CWebApplication->runController('corrida/admin')
+#13 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php?r=corrida/admin
+---
+2025/08/17 02:35:14 [error] [exception.Error] Error: Using $this when not in object context in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/models/Corrida.php:5
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/YiiBase.php(463): include()
+#1 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php(125): YiiBase::autoload('Corrida')
+#2 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/actions/CInlineAction.php(49): CorridaController->actionAdmin()
+#3 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(291): CFilterChain->run()
+#10 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(282): CController->run('admin')
+#12 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(141): CWebApplication->runController('corrida/admin')
+#13 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php?r=corrida/admin
+---
+2025/08/17 02:35:32 [error] [exception.Error] Error: Using $this when not in object context in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/models/Corrida.php:5
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/YiiBase.php(463): include()
+#1 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php(125): YiiBase::autoload('Corrida')
+#2 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/actions/CInlineAction.php(49): CorridaController->actionAdmin()
+#3 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(291): CFilterChain->run()
+#10 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(282): CController->run('admin')
+#12 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(141): CWebApplication->runController('corrida/admin')
+#13 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php?r=corrida/admin
+---
+2025/08/17 02:35:35 [error] [exception.Error] Error: Using $this when not in object context in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/models/Corrida.php:5
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/YiiBase.php(463): include()
+#1 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php(125): YiiBase::autoload('Corrida')
+#2 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/actions/CInlineAction.php(49): CorridaController->actionAdmin()
+#3 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(291): CFilterChain->run()
+#10 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(282): CController->run('admin')
+#12 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(141): CWebApplication->runController('corrida/admin')
+#13 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php?r=corrida/admin
+---
+2025/08/17 02:35:38 [error] [exception.Error] Error: Using $this when not in object context in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/models/Corrida.php:5
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/YiiBase.php(463): include()
+#1 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php(125): YiiBase::autoload('Corrida')
+#2 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/actions/CInlineAction.php(49): CorridaController->actionAdmin()
+#3 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(291): CFilterChain->run()
+#10 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(282): CController->run('admin')
+#12 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(141): CWebApplication->runController('corrida/admin')
+#13 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php?r=corrida/admin
+---
+2025/08/17 02:35:39 [error] [exception.Error] Error: Using $this when not in object context in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/models/Corrida.php:5
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/YiiBase.php(463): include()
+#1 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php(125): YiiBase::autoload('Corrida')
+#2 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/actions/CInlineAction.php(49): CorridaController->actionAdmin()
+#3 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(291): CFilterChain->run()
+#10 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(282): CController->run('admin')
+#12 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(141): CWebApplication->runController('corrida/admin')
+#13 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php?r=corrida/admin
+---
+2025/08/17 02:35:39 [error] [exception.Error] Error: Using $this when not in object context in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/models/Corrida.php:5
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/YiiBase.php(463): include()
+#1 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php(125): YiiBase::autoload('Corrida')
+#2 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/actions/CInlineAction.php(49): CorridaController->actionAdmin()
+#3 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(291): CFilterChain->run()
+#10 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(282): CController->run('admin')
+#12 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(141): CWebApplication->runController('corrida/admin')
+#13 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php?r=corrida/admin
+---
+2025/08/17 02:35:39 [error] [exception.Error] Error: Using $this when not in object context in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/models/Corrida.php:5
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/YiiBase.php(463): include()
+#1 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php(125): YiiBase::autoload('Corrida')
+#2 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/actions/CInlineAction.php(49): CorridaController->actionAdmin()
+#3 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(291): CFilterChain->run()
+#10 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(282): CController->run('admin')
+#12 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(141): CWebApplication->runController('corrida/admin')
+#13 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php?r=corrida/admin
+---
+2025/08/17 02:35:42 [error] [exception.Error] Error: Using $this when not in object context in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/models/Corrida.php:5
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/YiiBase.php(463): include()
+#1 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php(125): YiiBase::autoload('Corrida')
+#2 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/actions/CInlineAction.php(49): CorridaController->actionAdmin()
+#3 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(291): CFilterChain->run()
+#10 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(282): CController->run('admin')
+#12 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(141): CWebApplication->runController('corrida/admin')
+#13 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php?r=corrida/admin
+---
+2025/08/17 02:35:42 [error] [exception.Error] Error: Using $this when not in object context in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/models/Corrida.php:5
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/YiiBase.php(463): include()
+#1 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php(125): YiiBase::autoload('Corrida')
+#2 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/actions/CInlineAction.php(49): CorridaController->actionAdmin()
+#3 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(291): CFilterChain->run()
+#10 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(282): CController->run('admin')
+#12 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(141): CWebApplication->runController('corrida/admin')
+#13 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php?r=corrida/admin
+---
+2025/08/17 02:35:46 [error] [exception.Error] Error: Using $this when not in object context in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/models/Corrida.php:5
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/YiiBase.php(463): include()
+#1 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php(125): YiiBase::autoload('Corrida')
+#2 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/actions/CInlineAction.php(49): CorridaController->actionAdmin()
+#3 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(291): CFilterChain->run()
+#10 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(282): CController->run('admin')
+#12 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(141): CWebApplication->runController('corrida/admin')
+#13 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php?r=corrida/admin
+---
+2025/08/17 02:35:47 [error] [exception.Error] Error: Using $this when not in object context in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/models/Corrida.php:5
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/YiiBase.php(463): include()
+#1 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php(125): YiiBase::autoload('Corrida')
+#2 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/actions/CInlineAction.php(49): CorridaController->actionAdmin()
+#3 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(291): CFilterChain->run()
+#10 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(282): CController->run('admin')
+#12 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(141): CWebApplication->runController('corrida/admin')
+#13 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php?r=corrida/admin
+---
+2025/08/17 02:36:04 [error] [exception.Error] Error: Using $this when not in object context in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/models/Corrida.php:5
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/YiiBase.php(463): include()
+#1 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php(125): YiiBase::autoload('Corrida')
+#2 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/actions/CInlineAction.php(49): CorridaController->actionAdmin()
+#3 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(291): CFilterChain->run()
+#10 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(282): CController->run('admin')
+#12 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(141): CWebApplication->runController('corrida/admin')
+#13 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php?r=corrida/admin
+---
+2025/08/17 02:42:05 [warning] [application] Failed to set unsafe attribute "passageiro_nome" of "Corrida".
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php (128)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php (13)
+2025/08/17 02:42:05 [warning] [application] Failed to set unsafe attribute "motorista_nome" of "Corrida".
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php (128)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php (13)
+2025/08/17 02:42:16 [warning] [application] Failed to set unsafe attribute "passageiro_nome" of "Corrida".
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php (128)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php (13)
+2025/08/17 02:42:16 [warning] [application] Failed to set unsafe attribute "motorista_nome" of "Corrida".
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php (128)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php (13)
+2025/08/17 02:42:18 [warning] [application] Failed to set unsafe attribute "passageiro_nome" of "Corrida".
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php (128)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php (13)
+2025/08/17 02:42:18 [warning] [application] Failed to set unsafe attribute "motorista_nome" of "Corrida".
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php (128)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php (13)
+2025/08/17 02:42:23 [warning] [application] Failed to set unsafe attribute "passageiro_nome" of "Corrida".
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php (128)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php (13)
+2025/08/17 02:42:23 [warning] [application] Failed to set unsafe attribute "motorista_nome" of "Corrida".
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php (128)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php (13)
+2025/08/17 02:42:27 [warning] [application] Failed to set unsafe attribute "passageiro_nome" of "Corrida".
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php (128)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php (13)
+2025/08/17 02:42:27 [warning] [application] Failed to set unsafe attribute "motorista_nome" of "Corrida".
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php (128)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php (13)
+2025/08/17 02:42:37 [warning] [application] Failed to set unsafe attribute "passageiro_nome" of "Corrida".
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php (128)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php (13)
+2025/08/17 02:42:37 [warning] [application] Failed to set unsafe attribute "motorista_nome" of "Corrida".
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php (128)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php (13)
+2025/08/17 02:42:44 [warning] [application] Failed to set unsafe attribute "passageiro_nome" of "Corrida".
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php (128)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php (13)
+2025/08/17 02:42:44 [warning] [application] Failed to set unsafe attribute "motorista_nome" of "Corrida".
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php (128)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php (13)
+2025/08/17 02:42:48 [warning] [application] Failed to set unsafe attribute "passageiro_nome" of "Corrida".
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php (128)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php (13)
+2025/08/17 02:42:48 [warning] [application] Failed to set unsafe attribute "motorista_nome" of "Corrida".
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php (128)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php (13)
+2025/08/17 02:42:50 [warning] [application] Failed to set unsafe attribute "passageiro_nome" of "Corrida".
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php (128)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php (13)
+2025/08/17 02:42:50 [warning] [application] Failed to set unsafe attribute "motorista_nome" of "Corrida".
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php (128)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php (13)
+2025/08/17 02:42:52 [warning] [application] Failed to set unsafe attribute "passageiro_nome" of "Corrida".
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php (128)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php (13)
+2025/08/17 02:42:52 [warning] [application] Failed to set unsafe attribute "motorista_nome" of "Corrida".
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php (128)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php (13)
+2025/08/17 02:42:54 [warning] [application] Failed to set unsafe attribute "passageiro_nome" of "Corrida".
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php (128)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php (13)
+2025/08/17 02:42:54 [warning] [application] Failed to set unsafe attribute "motorista_nome" of "Corrida".
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php (128)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php (13)
+2025/08/17 02:42:56 [warning] [application] Failed to set unsafe attribute "passageiro_nome" of "Corrida".
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php (128)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php (13)
+2025/08/17 02:42:56 [warning] [application] Failed to set unsafe attribute "motorista_nome" of "Corrida".
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php (128)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php (13)
+2025/08/17 02:42:59 [warning] [application] Failed to set unsafe attribute "passageiro_nome" of "Corrida".
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php (128)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php (13)
+2025/08/17 02:42:59 [warning] [application] Failed to set unsafe attribute "motorista_nome" of "Corrida".
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php (128)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php (13)
+2025/08/17 02:43:00 [warning] [application] Failed to set unsafe attribute "passageiro_nome" of "Corrida".
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php (128)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php (13)
+2025/08/17 02:43:00 [warning] [application] Failed to set unsafe attribute "motorista_nome" of "Corrida".
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php (128)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php (13)
+2025/08/17 02:43:10 [warning] [application] Failed to set unsafe attribute "passageiro_nome" of "Corrida".
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php (128)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php (13)
+2025/08/17 02:43:10 [warning] [application] Failed to set unsafe attribute "motorista_nome" of "Corrida".
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php (128)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php (13)
+2025/08/17 02:43:18 [warning] [application] Failed to set unsafe attribute "passageiro_nome" of "Corrida".
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php (128)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php (13)
+2025/08/17 02:43:18 [warning] [application] Failed to set unsafe attribute "motorista_nome" of "Corrida".
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php (128)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php (13)
+2025/08/17 02:43:20 [warning] [application] Failed to set unsafe attribute "passageiro_nome" of "Corrida".
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php (128)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php (13)
+2025/08/17 02:43:20 [warning] [application] Failed to set unsafe attribute "motorista_nome" of "Corrida".
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php (128)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php (13)
+2025/08/17 02:47:04 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php:1121
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(291): CFilterChain->run()
+#7 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(282): CController->run('delete')
+#9 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(141): CWebApplication->runController('corrida/delete')
+#10 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=corrida/delete&id=4
+HTTP_REFERER=http://localhost:8888/index.php?r=corrida/admin
+---
+2025/08/17 02:48:24 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php:1121
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(291): CFilterChain->run()
+#7 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(282): CController->run('delete')
+#9 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(141): CWebApplication->runController('corrida/delete')
+#10 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=corrida/delete&id=3
+HTTP_REFERER=http://localhost:8888/index.php?r=corrida/admin
+---
+2025/08/17 03:00:21 [error] [php] Undefined variable $data (/Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/views/corrida/view.php:45)
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(126): require()
+#1 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(95): CorridaController->renderInternal()
+#2 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(872): CorridaController->renderFile()
+#3 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(785): CorridaController->renderPartial()
+#4 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php(43): CorridaController->render()
+#5 unknown(0): CorridaController->actionView()
+#6 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/actions/CAction.php(115): ReflectionMethod->invokeArgs()
+#7 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#8 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(134): CorridaController->runAction()
+#10 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#12 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CInlineFilter.php(58): CorridaController->filterAccessControl()
+#13 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#14 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(291): CFilterChain->run()
+#15 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(265): CorridaController->runActionWithFilters()
+#16 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(282): CorridaController->run()
+#17 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#18 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#19 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=corrida/view&id=2
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/views/corrida/view.php (45)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php (43)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php (13)
+2025/08/17 03:03:07 [error] [exception.CException] CException: Property "CDetailView.itemsCssClass" is not defined. in /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CComponent.php:173
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWidgetFactory.php(161): CComponent->__set('itemsCssClass', 'table table-str...')
+#1 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(CorridaController), 'CDetailView', Array)
+#2 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(181): CBaseController->createWidget('zii.widgets.CDe...', Array)
+#3 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/views/corrida/view.php(21): CBaseController->widget('zii.widgets.CDe...', Array)
+#4 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(126): require('/Users/admin/gi...')
+#5 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/admin/gi...', Array, true)
+#6 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(872): CBaseController->renderFile('/Users/admin/gi...', Array, true)
+#7 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(785): CController->renderPartial('view', Array, true)
+#8 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php(43): CController->render('view', Array)
+#9 [internal function]: CorridaController->actionView('2')
+#10 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/actions/CAction.php(115): ReflectionMethod->invokeArgs(Object(CorridaController), Array)
+#11 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(CorridaController), Object(ReflectionMethod), Array)
+#12 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#15 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#16 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(291): CFilterChain->run()
+#19 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(282): CController->run('view')
+#21 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(141): CWebApplication->runController('corrida/view')
+#22 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#23 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/index.php?r=corrida/view&id=2
+HTTP_REFERER=http://localhost:8888/index.php?r=corrida/admin
+---
+2025/08/17 03:05:03 [error] [exception.CException] CException: Property "CDetailView.cssClass" is not defined. in /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CComponent.php:173
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWidgetFactory.php(161): CComponent->__set('cssClass', 'table table-str...')
+#1 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(CorridaController), 'CDetailView', Array)
+#2 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(181): CBaseController->createWidget('zii.widgets.CDe...', Array)
+#3 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/views/corrida/view.php(21): CBaseController->widget('zii.widgets.CDe...', Array)
+#4 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(126): require('/Users/admin/gi...')
+#5 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/admin/gi...', Array, true)
+#6 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(872): CBaseController->renderFile('/Users/admin/gi...', Array, true)
+#7 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(785): CController->renderPartial('view', Array, true)
+#8 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php(43): CController->render('view', Array)
+#9 [internal function]: CorridaController->actionView('2')
+#10 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/actions/CAction.php(115): ReflectionMethod->invokeArgs(Object(CorridaController), Array)
+#11 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(CorridaController), Object(ReflectionMethod), Array)
+#12 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#15 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#16 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(291): CFilterChain->run()
+#19 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(282): CController->run('view')
+#21 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(141): CWebApplication->runController('corrida/view')
+#22 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#23 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/index.php?r=corrida/view&id=2
+HTTP_REFERER=http://localhost:8888/index.php?r=corrida/admin
+---
+2025/08/17 03:05:04 [error] [exception.CException] CException: Property "CDetailView.cssClass" is not defined. in /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CComponent.php:173
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWidgetFactory.php(161): CComponent->__set('cssClass', 'table table-str...')
+#1 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(CorridaController), 'CDetailView', Array)
+#2 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(181): CBaseController->createWidget('zii.widgets.CDe...', Array)
+#3 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/views/corrida/view.php(21): CBaseController->widget('zii.widgets.CDe...', Array)
+#4 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(126): require('/Users/admin/gi...')
+#5 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/admin/gi...', Array, true)
+#6 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(872): CBaseController->renderFile('/Users/admin/gi...', Array, true)
+#7 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(785): CController->renderPartial('view', Array, true)
+#8 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php(43): CController->render('view', Array)
+#9 [internal function]: CorridaController->actionView('2')
+#10 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/actions/CAction.php(115): ReflectionMethod->invokeArgs(Object(CorridaController), Array)
+#11 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(CorridaController), Object(ReflectionMethod), Array)
+#12 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#15 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#16 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(291): CFilterChain->run()
+#19 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(282): CController->run('view')
+#21 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(141): CWebApplication->runController('corrida/view')
+#22 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#23 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/index.php?r=corrida/view&id=2
+HTTP_REFERER=http://localhost:8888/index.php?r=corrida/admin
+---
+2025/08/17 03:05:04 [error] [exception.CException] CException: Property "CDetailView.cssClass" is not defined. in /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CComponent.php:173
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWidgetFactory.php(161): CComponent->__set('cssClass', 'table table-str...')
+#1 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(CorridaController), 'CDetailView', Array)
+#2 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(181): CBaseController->createWidget('zii.widgets.CDe...', Array)
+#3 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/views/corrida/view.php(21): CBaseController->widget('zii.widgets.CDe...', Array)
+#4 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(126): require('/Users/admin/gi...')
+#5 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/admin/gi...', Array, true)
+#6 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(872): CBaseController->renderFile('/Users/admin/gi...', Array, true)
+#7 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(785): CController->renderPartial('view', Array, true)
+#8 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/CorridaController.php(43): CController->render('view', Array)
+#9 [internal function]: CorridaController->actionView('2')
+#10 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/actions/CAction.php(115): ReflectionMethod->invokeArgs(Object(CorridaController), Array)
+#11 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(CorridaController), Object(ReflectionMethod), Array)
+#12 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#15 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#16 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(291): CFilterChain->run()
+#19 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(282): CController->run('view')
+#21 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(141): CWebApplication->runController('corrida/view')
+#22 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#23 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/index.php?r=corrida/view&id=2
+HTTP_REFERER=http://localhost:8888/index.php?r=corrida/admin
+---
+2025/08/17 03:19:02 [error] [php] include(CHTML.php): Failed to open stream: No such file or directory (/Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/YiiBase.php:463)
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/YiiBase.php(463): include()
+#1 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/views/motorista/view.php(30): autoload()
+#2 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(126): require()
+#3 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(95): MotoristaController->renderInternal()
+#4 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(872): MotoristaController->renderFile()
+#5 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(785): MotoristaController->renderPartial()
+#6 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/MotoristaController.php(43): MotoristaController->render()
+#7 unknown(0): MotoristaController->actionView()
+#8 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/actions/CAction.php(115): ReflectionMethod->invokeArgs()
+#9 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#11 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(134): MotoristaController->runAction()
+#12 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#14 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CInlineFilter.php(58): MotoristaController->filterAccessControl()
+#15 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#16 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(291): CFilterChain->run()
+#17 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(265): MotoristaController->runActionWithFilters()
+#18 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(282): MotoristaController->run()
+#19 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#20 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#21 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=motorista/view&id=1
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/views/motorista/view.php (30)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/MotoristaController.php (43)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php (13)
+2025/08/17 03:19:08 [error] [php] include(CHTML.php): Failed to open stream: No such file or directory (/Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/YiiBase.php:463)
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/YiiBase.php(463): include()
+#1 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/views/motorista/view.php(30): autoload()
+#2 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(126): require()
+#3 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(95): MotoristaController->renderInternal()
+#4 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(872): MotoristaController->renderFile()
+#5 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(785): MotoristaController->renderPartial()
+#6 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/MotoristaController.php(43): MotoristaController->render()
+#7 unknown(0): MotoristaController->actionView()
+#8 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/actions/CAction.php(115): ReflectionMethod->invokeArgs()
+#9 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#11 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(134): MotoristaController->runAction()
+#12 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#14 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CInlineFilter.php(58): MotoristaController->filterAccessControl()
+#15 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#16 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(291): CFilterChain->run()
+#17 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(265): MotoristaController->runActionWithFilters()
+#18 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(282): MotoristaController->run()
+#19 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#20 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#21 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=motorista/view&id=1
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/views/motorista/view.php (30)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/MotoristaController.php (43)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php (13)
+2025/08/17 03:19:46 [error] [php] include(CHTML.php): Failed to open stream: No such file or directory (/Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/YiiBase.php:463)
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/YiiBase.php(463): include()
+#1 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/views/motorista/view.php(30): autoload()
+#2 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(126): require()
+#3 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(95): MotoristaController->renderInternal()
+#4 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(872): MotoristaController->renderFile()
+#5 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(785): MotoristaController->renderPartial()
+#6 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/MotoristaController.php(43): MotoristaController->render()
+#7 unknown(0): MotoristaController->actionView()
+#8 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/actions/CAction.php(115): ReflectionMethod->invokeArgs()
+#9 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#11 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(134): MotoristaController->runAction()
+#12 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#14 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CInlineFilter.php(58): MotoristaController->filterAccessControl()
+#15 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#16 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(291): CFilterChain->run()
+#17 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(265): MotoristaController->runActionWithFilters()
+#18 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(282): MotoristaController->run()
+#19 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#20 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#21 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=motorista/view&id=1
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/views/motorista/view.php (30)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/MotoristaController.php (43)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php (13)
+2025/08/17 03:19:59 [error] [php] include(CHTML.php): Failed to open stream: No such file or directory (/Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/YiiBase.php:463)
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/YiiBase.php(463): include()
+#1 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/views/motorista/view.php(30): autoload()
+#2 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(126): require()
+#3 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(95): MotoristaController->renderInternal()
+#4 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(872): MotoristaController->renderFile()
+#5 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(785): MotoristaController->renderPartial()
+#6 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/MotoristaController.php(43): MotoristaController->render()
+#7 unknown(0): MotoristaController->actionView()
+#8 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/actions/CAction.php(115): ReflectionMethod->invokeArgs()
+#9 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#11 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(134): MotoristaController->runAction()
+#12 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#14 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CInlineFilter.php(58): MotoristaController->filterAccessControl()
+#15 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#16 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(291): CFilterChain->run()
+#17 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(265): MotoristaController->runActionWithFilters()
+#18 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(282): MotoristaController->run()
+#19 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#20 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#21 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=motorista/view&id=1
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/views/motorista/view.php (30)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/MotoristaController.php (43)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php (13)
+2025/08/17 03:20:52 [error] [php] include(CHTML.php): Failed to open stream: No such file or directory (/Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/YiiBase.php:463)
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/YiiBase.php(463): include()
+#1 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/views/motorista/view.php(30): autoload()
+#2 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(126): require()
+#3 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CBaseController.php(95): MotoristaController->renderInternal()
+#4 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(872): MotoristaController->renderFile()
+#5 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(785): MotoristaController->renderPartial()
+#6 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/MotoristaController.php(43): MotoristaController->render()
+#7 unknown(0): MotoristaController->actionView()
+#8 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/actions/CAction.php(115): ReflectionMethod->invokeArgs()
+#9 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#11 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(134): MotoristaController->runAction()
+#12 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#14 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CInlineFilter.php(58): MotoristaController->filterAccessControl()
+#15 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#16 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(291): CFilterChain->run()
+#17 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CController.php(265): MotoristaController->runActionWithFilters()
+#18 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(282): MotoristaController->run()
+#19 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#20 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#21 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=motorista/view&id=1
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/views/motorista/view.php (30)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/MotoristaController.php (43)
+in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php (13)
