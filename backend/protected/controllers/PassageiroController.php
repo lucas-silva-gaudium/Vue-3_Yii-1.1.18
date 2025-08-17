@@ -40,8 +40,19 @@ class PassageiroController extends Controller
 	 */
 	public function actionView($id)
 	{
+		$corridasDataProvider = new CActiveDataProvider('Corrida', array(
+			'criteria' => array(
+				'condition' => 'passageiro_id = :passageiroId',
+				'params'    => array(':passageiroId' => $id),
+				'order'     => 'data_hora_inicio DESC',
+				'limit'     => 5,
+			),
+			'pagination' => false,
+		));
+
 		$this->render('view', array(
 			'model' => $this->loadModel($id),
+			'corridasDataProvider' => $corridasDataProvider,
 		));
 	}
 

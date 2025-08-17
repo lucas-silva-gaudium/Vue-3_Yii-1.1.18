@@ -27,6 +27,9 @@ class Corrida extends CActiveRecord
 {
 	public $passageiro_nome;
 	public $motorista_nome;
+	public $data_inicio;
+	public $data_fim;
+
 
 	/**
 	 * @return string the associated database table name
@@ -47,8 +50,7 @@ class Corrida extends CActiveRecord
 			array('origem_latitude, origem_longitude, destino_latitude, destino_longitude, tarifa', 'numerical'),
 			array('status, origem_endereco, destino_endereco', 'length', 'max' => 255),
 			array('previsao_chegada_destino, data_hora_finalizacao', 'safe'),
-			array('id, passageiro_id, motorista_id, status, origem_endereco, origem_latitude, origem_longitude, destino_endereco, destino_latitude, destino_longitude, tarifa, previsao_chegada_destino, data_hora_inicio, data_hora_finalizacao', 'safe', 'on' => 'search'),
-
+			array('id, passageiro_id, motorista_id, status, origem_endereco, origem_latitude, origem_longitude, destino_endereco, destino_latitude, destino_longitude, tarifa, previsao_chegada_destino, data_hora_inicio, data_hora_finalizacao, passageiro_nome, motorista_nome, data_inicio, data_fim', 'safe', 'on' => 'search'),
 		);
 	}
 
@@ -108,6 +110,15 @@ class Corrida extends CActiveRecord
 		$criteria->compare('t.status', $this->status, true);
 		$criteria->compare('passageiro.nome', $this->passageiro_nome, true);
 		$criteria->compare('motorista.nome', $this->motorista_nome, true);
+
+		if (!empty($this->data_inicio)) {
+			$criteria->addCondition('t.data_hora_inicio >= :data_inicio');
+			$criteria->params[':data_inicio'] = $this->data_inicio . ' 00:00:00';
+		}
+		if (!empty($this->data_fim)) {
+			$criteria->addCondition('t.data_hora_inicio <= :data_fim');
+			$criteria->params[':data_fim'] = $this->data_fim . ' 23:59:59';
+		}
 
 		$criteria->order = "CASE t.status WHEN 'Em andamento' THEN 1 ELSE 2 END, t.data_hora_inicio DESC";
 

@@ -6,85 +6,66 @@
 
 <div class="wide form">
 
-<?php $form=$this->beginWidget('CActiveForm', array(
-	'action'=>Yii::app()->createUrl($this->route),
-	'method'=>'get',
-)); ?>
+	<?php $form = $this->beginWidget('CActiveForm', array(
+		'action' => Yii::app()->createUrl($this->route),
+		'method' => 'get',
+	)); ?>
 
-	<div class="row">
-		<?php echo $form->label($model,'id'); ?>
-		<?php echo $form->textField($model,'id'); ?>
-	</div>
+	<section>
+		<div class="row">
+			<div class="col-md-4 mb-4">
+				<p class="mb-2"><?php echo $form->label($model, 'id'); ?></p>
+				<?php echo $form->textField($model, 'id', array('class' => 'form-control')); ?>
+			</div>
 
-	<div class="row">
-		<?php echo $form->label($model,'passageiro_id'); ?>
-		<?php echo $form->textField($model,'passageiro_id'); ?>
-	</div>
+			<div class="col-md-4 mb-4">
+				<p class="mb-2"><?php echo $form->label($model, 'status'); ?></p>
+				<?php echo $form->dropDownList(
+					$model,
+					'status',
+					array('Em andamento' => 'Em andamento', 'Finalizada' => 'Finalizada', 'Não Atendida' => 'Não Atendida'),
+					array('prompt' => 'Todos', 'class' => 'form-control')
+				); ?>
+			</div>
 
-	<div class="row">
-		<?php echo $form->label($model,'motorista_id'); ?>
-		<?php echo $form->textField($model,'motorista_id'); ?>
-	</div>
+			<div class="col-md-4 mb-4">
+				<p class="mb-2"><?php echo $form->label($model, 'passageiro_nome'); ?></p>
+				<?php echo $form->textField($model, 'passageiro_nome', array('class' => 'form-control')); ?>
+			</div>
+		</div>
 
-	<div class="row">
-		<?php echo $form->label($model,'status'); ?>
-		<?php echo $form->textField($model,'status',array('size'=>60,'maxlength'=>255)); ?>
-	</div>
+		<div class="row">
+			<div class="col-md-4 mb-4">
+				<p class="mb-2"><?php echo $form->label($model, 'motorista_nome'); ?></p>
+				<?php echo $form->textField($model, 'motorista_nome', array('class' => 'form-control')); ?>
+			</div>
 
-	<div class="row">
-		<?php echo $form->label($model,'origem_endereco'); ?>
-		<?php echo $form->textField($model,'origem_endereco',array('size'=>60,'maxlength'=>255)); ?>
-	</div>
+			<div class="col-md-4 mb-4">
+				<p class="mb-2"><?php echo $form->label($model, 'data_inicio'); ?></p>
+				<?php $this->widget('zii.widgets.jui.CJuiDatePicker', array(
+					'model' => $model,
+					'attribute' => 'data_inicio',
+					'options' => array('dateFormat' => 'yy-mm-dd'),
+					'htmlOptions' => array('class' => 'form-control'),
+				)); ?>
+			</div>
 
-	<div class="row">
-		<?php echo $form->label($model,'origem_latitude'); ?>
-		<?php echo $form->textField($model,'origem_latitude',array('size'=>10,'maxlength'=>10)); ?>
-	</div>
+			<div class="col-md-4 mb-4">
+				<p class="mb-2"><?php echo $form->label($model, 'data_fim'); ?></p>
+				<?php $this->widget('zii.widgets.jui.CJuiDatePicker', array(
+					'model' => $model,
+					'attribute' => 'data_fim',
+					'options' => array('dateFormat' => 'yy-mm-dd'),
+					'htmlOptions' => array('class' => 'form-control'),
+				)); ?>
+			</div>
+		</div>
 
-	<div class="row">
-		<?php echo $form->label($model,'origem_longitude'); ?>
-		<?php echo $form->textField($model,'origem_longitude',array('size'=>11,'maxlength'=>11)); ?>
-	</div>
+		<div class="row buttons mt-3">
+			<?php echo CHtml::submitButton('Pesquisar', array('class' => 'btn btn-outline-secondary')); ?>
+		</div>
+	</section>
 
-	<div class="row">
-		<?php echo $form->label($model,'destino_endereco'); ?>
-		<?php echo $form->textField($model,'destino_endereco',array('size'=>60,'maxlength'=>255)); ?>
-	</div>
+	<?php $this->endWidget(); ?>
 
-	<div class="row">
-		<?php echo $form->label($model,'destino_latitude'); ?>
-		<?php echo $form->textField($model,'destino_latitude',array('size'=>10,'maxlength'=>10)); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'destino_longitude'); ?>
-		<?php echo $form->textField($model,'destino_longitude',array('size'=>11,'maxlength'=>11)); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'tarifa'); ?>
-		<?php echo $form->textField($model,'tarifa',array('size'=>10,'maxlength'=>10)); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'previsao_chegada_destino'); ?>
-		<?php echo $form->textField($model,'previsao_chegada_destino'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'data_hora_inicio'); ?>
-		<?php echo $form->textField($model,'data_hora_inicio'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'data_hora_finalizacao'); ?>
-		<?php echo $form->textField($model,'data_hora_finalizacao'); ?>
-	</div>
-
-	<div class="row buttons">
-		<?php echo CHtml::submitButton('Search'); ?>
-	</div>
-
-<?php $this->endWidget(); ?>
-
-</div><!-- search-form -->
+</div>

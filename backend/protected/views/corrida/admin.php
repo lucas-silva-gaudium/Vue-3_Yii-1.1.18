@@ -6,12 +6,27 @@ $this->breadcrumbs = array(
 	'Corridas' => array('index'),
 	'Gerenciar',
 );
-
+Yii::app()->clientScript->registerScript('search', "
+$('.search-button').click(function(){
+	$('.search-form').toggle();
+	return false;
+});
+$('.search-form form').submit(function(){
+	$('#motorista-grid').yiiGridView('update', {
+		data: $(this).serialize()
+	});
+	return false;
+});
+");
 
 ?>
 
+
 <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center mb-2">
 	<h1>Gerenciar Corridas</h1>
+	<div>
+		<?php echo CHtml::link('Pesquisa avançada', '#', array('class' => 'btn btn-primary search-button text-white text-decoration-none')); ?>
+	</div>
 </div>
 
 <div class="search-form" style="display:none">
@@ -68,7 +83,7 @@ $this->breadcrumbs = array(
 					'value' => 'Yii::app()->dateFormatter->formatDateTime($data->data_hora_inicio, "medium", "short")',
 					'headerHtmlOptions' => array('class' => 'text-dark text-decoration-none'),
 				),
-				
+
 				array(
 					'header' => 'Ações',
 					'type' => 'raw',

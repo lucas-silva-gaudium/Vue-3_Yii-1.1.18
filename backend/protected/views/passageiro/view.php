@@ -45,3 +45,30 @@ $this->breadcrumbs = array(
 		'obs',
 	),
 )); ?>
+
+<hr>
+<h3>Histórico de Corridas</h3>
+
+<?php $this->widget('zii.widgets.grid.CGridView', array(
+	'id' => 'corridas-passageiro-grid',
+	'dataProvider' => $corridasDataProvider,
+	'itemsCssClass' => 'table table-striped table-hover',
+	'summaryText' => '',
+	'columns' => array(
+		array(
+			'name' => 'data_hora_inicio',
+			'header' => 'Data da Corrida',
+			'value' => 'Yii::app()->dateFormatter->formatDateTime($data->data_hora_inicio, "short", "short")',
+		),
+		array(
+			'name' => 'destino_endereco',
+			'header' => 'Destino',
+		),
+		array(
+			'name' => 'status',
+			'header' => 'Situação',
+			'type' => 'raw',
+			'value' => 'CHtml::tag("span", array("class"=>"badge bg-info"), $data->status)',
+		),
+	),
+)); ?>
