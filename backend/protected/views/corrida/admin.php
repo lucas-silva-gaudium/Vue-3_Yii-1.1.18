@@ -12,10 +12,10 @@ $('.search-button').click(function(){
 	return false;
 });
 $('.search-form form').submit(function(){
-	$('#motorista-grid').yiiGridView('update', {
-		data: $(this).serialize()
-	});
-	return false;
+    $('#corrida-grid').yiiGridView('update', { // <-- Erro aqui
+        data: $(this).serialize()
+    });
+    return false;
 });
 ");
 
