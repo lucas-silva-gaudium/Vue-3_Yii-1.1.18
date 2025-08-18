@@ -12,7 +12,7 @@ $('.search-button').click(function(){
 	return false;
 });
 $('.search-form form').submit(function(){
-    $('#corrida-grid').yiiGridView('update', { // <-- Erro aqui
+    $('#corrida-grid').yiiGridView('update', {
         data: $(this).serialize()
     });
     return false;
