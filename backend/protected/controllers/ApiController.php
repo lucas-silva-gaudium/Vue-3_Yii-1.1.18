@@ -123,7 +123,7 @@ class ApiController extends CController
         $distanciaEmKm = $distanciaEmMetros / 1000;
 
         $duracaoCorridaEmMinutos = $distanciaEmMetros / 200;
-        $tempoTotalParaPrevisaoEmMinutos = $duracaoCorridaEmMinutos + 3; // Adiciona os 3 minutos fixos
+        $tempoTotalParaPrevisaoEmMinutos = $duracaoCorridaEmMinutos + 3;
 
         $previsaoChegada = new DateTime();
         $previsaoChegada->add(new DateInterval('PT' . round($tempoTotalParaPrevisaoEmMinutos) . 'M'));
@@ -226,7 +226,7 @@ class ApiController extends CController
         }
 
         if (!empty($erros)) {
-            http_response_code(400); // Bad Request
+            http_response_code(400);
             echo CJSON::encode(array(
                 'sucesso' => false,
                 'erros' => $erros,
@@ -255,6 +255,195 @@ class ApiController extends CController
                 'detalhes_validacao' => $errosDeValidacao,
             ));
         }
+
+        Yii::app()->end();
+    }
+
+    public function actionEstatisticasMotorista()
+    {
+        header('Content-Type: application/json; charset=latin1');
+
+        $pathSecret = Yii::getPathOfAlias('application.config.secret') . '.txt';
+        $token = trim(file_get_contents($pathSecret));
+        $receivedToken = isset($_SERVER['HTTP_API_TOKEN']) ? $_SERVER['HTTP_API_TOKEN'] : null;
+
+        if ($receivedToken === null || $receivedToken != $token) {
+            http_response_code(403);
+            echo CJSON::encode(array('sucesso' => false, 'erros' => array('Token de API inválido ou ausente.')));
+            Yii::app()->end();
+        }
+
+        if (!Yii::app()->request->isPostRequest) {
+            http_response_code(405);
+            echo CJSON::encode(array('sucesso' => false, 'erros' => array('Método não permitido.')));
+            Yii::app()->end();
+        }
+
+        $dados = CJSON::decode(file_get_contents('php://input'), true);
+
+        if ($dados === null) {
+            http_response_code(400);
+            echo CJSON::encode(array('sucesso' => false, 'erros' => array('JSON de entrada inválido ou ausente.')));
+            Yii::app()->end();
+        }
+
+        $erros = array();
+
+
+        $motoristaId = isset($dados['motorista']['id']) ? $dados['motorista']['id'] : null;
+        $dataInicioStr = isset($dados['intervalo']['inicio']) ? $dados['intervalo']['inicio'] : null;
+        $dataFimStr = isset($dados['intervalo']['fim']) ? $dados['intervalo']['fim'] : null;
+        $periodicidade = isset($dados['periodicidade']) ? strtoupper($dados['periodicidade']) : null;
+
+
+        $motorista = null;
+        if ($motoristaId) {
+            $motorista = Motorista::model()->findByPk($motoristaId);
+            if ($motorista === null) {
+                $erros[] = "Motorista com o ID informado não existe.";
+            }
+        } else {
+            $erros[] = "ID do motorista não foi informado.";
+        }
+
+
+        if (!in_array($periodicidade, ['D', 'S', 'M'])) {
+            $erros[] = "Periodicidade inválida. Use 'D' para Dia, 'S' para Semana ou 'M' para Mês.";
+        }
+
+
+        $dataInicio = DateTime::createFromFormat('Y-m-d', $dataInicioStr);
+        $dataFim = DateTime::createFromFormat('Y-m-d', $dataFimStr);
+
+        if ($dataInicio === false || $dataFim === false) {
+            $erros[] = "Formato de data inválido. Use 'AAAA-MM-DD'.";
+        } else {
+
+            if ($dataInicio > $dataFim) {
+                $erros[] = "A data inicial deve ser anterior ou igual à data final.";
+            }
+
+            $intervalo = $dataInicio->diff($dataFim);
+            if ($intervalo->days > 180) {
+                $erros[] = "O período solicitado não pode ter mais de 180 dias.";
+            }
+        }
+
+
+        if (!empty($erros)) {
+            http_response_code(400);
+            echo CJSON::encode(array('sucesso' => false, 'erros' => $erros));
+            Yii::app()->end();
+        }
+
+        $hoje = new DateTime();
+
+        if ($dataInicio > $hoje) {
+            $dataInicio = $hoje;
+        }
+        if ($dataFim > $hoje) {
+            $dataFim = $hoje;
+        }
+
+        if ($dataInicio > $dataFim) {
+            $dataInicio = $dataFim;
+        }
+
+
+        $sqlSelect = "
+            SELECT 
+                COUNT(id) as quantidade_corridas,
+                SUM(tarifa) as faturamento,
+                SUM(TIMESTAMPDIFF(MINUTE, data_hora_inicio, data_hora_finalizacao)) as duracao_total_minutos
+        ";
+
+        $sqlGroupBy = "";
+        $sqlOrderBy = "";
+
+
+        switch ($periodicidade) {
+            case 'D':
+                $sqlSelect .= ", DATE(data_hora_inicio) as periodo";
+                $sqlGroupBy = "GROUP BY DATE(data_hora_inicio)";
+                $sqlOrderBy = "ORDER BY DATE(data_hora_inicio)";
+                break;
+            case 'S':
+                $sqlSelect .= ", YEAR(data_hora_inicio) as ano, WEEK(data_hora_inicio, 1) as semana";
+                $sqlGroupBy = "GROUP BY YEAR(data_hora_inicio), WEEK(data_hora_inicio, 1)";
+                $sqlOrderBy = "ORDER BY ano, semana";
+                break;
+            case 'M':
+                $sqlSelect .= ", YEAR(data_hora_inicio) as ano, MONTH(data_hora_inicio) as mes";
+                $sqlGroupBy = "GROUP BY YEAR(data_hora_inicio), MONTH(data_hora_inicio)";
+                $sqlOrderBy = "ORDER BY ano, mes";
+                break;
+        }
+
+
+        $sql = "
+            {$sqlSelect}
+            FROM corrida
+            WHERE motorista_id = :motorista_id
+              AND status = 'Finalizada'
+              AND data_hora_inicio BETWEEN :data_inicio AND :data_fim
+            {$sqlGroupBy}
+            {$sqlOrderBy}
+        ";
+
+
+        $command = Yii::app()->db->createCommand($sql);
+        $command->bindValue(":motorista_id", $motoristaId);
+        $command->bindValue(":data_inicio", $dataInicio->format('Y-m-d H:i:s'));
+        $command->bindValue(":data_fim", $dataFim->format('Y-m-d H:i:s'));
+
+        $resultados = $command->queryAll();
+
+
+        $listaFormatada = array();
+        foreach ($resultados as $resultado) {
+            $duracaoTotalMinutos = (int)$resultado['duracao_total_minutos'];
+            $duracaoHoras = floor($duracaoTotalMinutos / 60);
+            $duracaoMinutos = $duracaoTotalMinutos % 60;
+            $duracaoFormatada = "{$duracaoHoras} horas {$duracaoMinutos} minutos";
+
+            $intervaloResposta = array();
+            if ($periodicidade == 'D') {
+                $intervaloResposta['inicio'] = $resultado['periodo'];
+                $intervaloResposta['fim'] = $resultado['periodo'];
+            } elseif ($periodicidade == 'M') {
+                $ano = $resultado['ano'];
+                $mes = str_pad($resultado['mes'], 2, '0', STR_PAD_LEFT);
+                $intervaloResposta['inicio'] = "{$ano}-{$mes}-01";
+                $intervaloResposta['fim'] = date('Y-m-t', strtotime($intervaloResposta['inicio']));
+            } elseif ($periodicidade == 'S') {
+                $ano = $resultado['ano'];
+                $semana = $resultado['semana'];
+                $data = new DateTime();
+                $data->setISODate($ano, $semana);
+                $intervaloResposta['inicio'] = $data->format('Y-m-d');
+                $data->modify('+6 days');
+                $intervaloResposta['fim'] = $data->format('Y-m-d');
+            }
+
+            $listaFormatada[] = array(
+                'intervalo' => $intervaloResposta,
+                'estatistica' => array(
+                    'quantidade' => (int)$resultado['quantidade_corridas'],
+                    'duracao' => $duracaoFormatada,
+                    'faturamento' => round((float)$resultado['faturamento'], 2),
+                ),
+            );
+        }
+
+
+        echo CJSON::encode(array(
+            'motorista' => array(
+                'id' => $motorista->id,
+                'nome' => $motorista->nome,
+            ),
+            'periodicidade' => $periodicidade,
+            'lista' => $listaFormatada,
+        ));
 
         Yii::app()->end();
     }

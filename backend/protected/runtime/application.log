@@ -1907,3 +1907,21 @@ Stack trace:
 #16 {main}
 REQUEST_URI=/index.php?r=passageiro/view&id=2
 ---
+2025/08/18 01:07:51 [error] [exception.ParseError] ParseError: syntax error, unexpected token "private", expecting ";" or "{" in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/ApiController.php:312
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(276): CWebApplication->createController('estatisticasMot...')
+#1 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(141): CWebApplication->runController('api/estatistica...')
+#2 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#3 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/index.php?r=api/estatisticasMotorista
+---
+2025/08/18 01:08:35 [error] [exception.ParseError] ParseError: syntax error, unexpected token "private", expecting ";" or "{" in /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/protected/controllers/ApiController.php:312
+Stack trace:
+#0 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(276): CWebApplication->createController('estatisticasMot...')
+#1 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/web/CWebApplication.php(141): CWebApplication->runController('api/estatistica...')
+#2 /Users/admin/git/Gaudium/Others/Testes/YII-framework/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#3 /Users/admin/git/Gaudium/Others/Testes/Vue-3_Yii-1.1.18/backend/index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/index.php?r=api/estatisticasMotorista
+---
