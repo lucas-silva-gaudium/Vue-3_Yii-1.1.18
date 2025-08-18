@@ -36,17 +36,17 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-4 mb-4">
+			<div class="col-md-6 mb-4">
 				<?php echo $form->labelEx($model, 'nascimento', $classLabel); ?>
 				<?php echo $form->dateField($model, 'nascimento', array_merge($classInput, ['placeholder' => 'AAAA-MM-DD', 'type' => 'date'])); ?>
 				<?php echo $form->error($model, 'nascimento', $classError); ?>
 			</div>
-			<div class="col-md-4 mb-4">
+			<div class="col-md-6 mb-4">
 				<?php echo $form->labelEx($model, 'telefone', $classLabel); ?>
 				<?php echo $form->telField($model, 'telefone', array_merge($classInput, ['placeholder' => '+55-11-999999999'])); ?>
 				<?php echo $form->error($model, 'telefone', $classError); ?>
 			</div>
-			<div class="col-md-4 mb-4">
+			<!-- <div class="col-md-4 mb-4">
 				<?php echo $form->labelEx($model, 'status', $classLabel); ?>
 				<?php echo $form->dropDownList(
 					$model,
@@ -55,7 +55,7 @@
 					array_merge($classInput, array('prompt' => 'Selecione um status...'))
 				); ?>
 				<?php echo $form->error($model, 'status', $classError); ?>
-			</div>
+			</div> -->
 		</div>
 		<div class="row">
 			<div class="col-md-12 mb-4">

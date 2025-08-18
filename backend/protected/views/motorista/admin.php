@@ -66,6 +66,22 @@ $('.search-form form').submit(function(){
 			'name' => 'placa_veiculo',
 			'headerHtmlOptions' => ['class' => 'text-dark text-decoration-none'],
 		],
+		[
+			'name' => 'status',
+			'htmlOptions' => array('class' => 'text-dark text-decoration-none'),
+			'type' => 'raw',
+			'value' => function ($model) {
+				$icon = "<i class='bi bi-pencil-fill'></i>";
+				$content = "
+				<div class='d-flex justify-content-center'>
+					<a href='?r=motorista/updateStatus&id={$model->id}' class='btn btn-sm btn-outline-primary' title='Editar'>
+						<span class='inline-block me-3'>{$model->status}</span>
+						<span>{$icon}</span>
+					</a>
+				</div>";
+				return $content;
+			}
+		],
 		array(
 			'header' => 'Ações',
 			'type' => 'raw',

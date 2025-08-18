@@ -25,6 +25,12 @@
  */
 class Corrida extends CActiveRecord
 {
+	public $passageiro_nome;
+	public $motorista_nome;
+	public $data_inicio;
+	public $data_fim;
+
+
 	/**
 	 * @return string the associated database table name
 	 */
@@ -44,7 +50,7 @@ class Corrida extends CActiveRecord
 			array('origem_latitude, origem_longitude, destino_latitude, destino_longitude, tarifa', 'numerical'),
 			array('status, origem_endereco, destino_endereco', 'length', 'max' => 255),
 			array('previsao_chegada_destino, data_hora_finalizacao', 'safe'),
-			array('id, passageiro_id, motorista_id, status, origem_endereco, origem_latitude, origem_longitude, destino_endereco, destino_latitude, destino_longitude, tarifa, previsao_chegada_destino, data_hora_inicio, data_hora_finalizacao', 'safe', 'on' => 'search'),
+			array('id, passageiro_id, motorista_id, status, origem_endereco, origem_latitude, origem_longitude, destino_endereco, destino_latitude, destino_longitude, tarifa, previsao_chegada_destino, data_hora_inicio, data_hora_finalizacao, passageiro_nome, motorista_nome, data_inicio, data_fim', 'safe', 'on' => 'search'),
 		);
 	}
 
@@ -96,24 +102,25 @@ class Corrida extends CActiveRecord
 	 */
 	public function search()
 	{
-		// @todo Please modify the following code to remove attributes that should not be searched.
-
 		$criteria = new CDbCriteria;
 
-		$criteria->compare('id', $this->id);
-		$criteria->compare('passageiro_id', $this->passageiro_id);
-		$criteria->compare('motorista_id', $this->motorista_id);
-		$criteria->compare('status', $this->status, true);
-		$criteria->compare('origem_endereco', $this->origem_endereco, true);
-		$criteria->compare('origem_latitude', $this->origem_latitude, true);
-		$criteria->compare('origem_longitude', $this->origem_longitude, true);
-		$criteria->compare('destino_endereco', $this->destino_endereco, true);
-		$criteria->compare('destino_latitude', $this->destino_latitude, true);
-		$criteria->compare('destino_longitude', $this->destino_longitude, true);
-		$criteria->compare('tarifa', $this->tarifa, true);
-		$criteria->compare('previsao_chegada_destino', $this->previsao_chegada_destino, true);
-		$criteria->compare('data_hora_inicio', $this->data_hora_inicio, true);
-		$criteria->compare('data_hora_finalizacao', $this->data_hora_finalizacao, true);
+		$criteria->with = array('passageiro', 'motorista');
+
+		$criteria->compare('t.id', $this->id);
+		$criteria->compare('t.status', $this->status, true);
+		$criteria->compare('passageiro.nome', $this->passageiro_nome, true);
+		$criteria->compare('motorista.nome', $this->motorista_nome, true);
+
+		if (!empty($this->data_inicio)) {
+			$criteria->addCondition('t.data_hora_inicio >= :data_inicio');
+			$criteria->params[':data_inicio'] = $this->data_inicio . ' 00:00:00';
+		}
+		if (!empty($this->data_fim)) {
+			$criteria->addCondition('t.data_hora_inicio <= :data_fim');
+			$criteria->params[':data_fim'] = $this->data_fim . ' 23:59:59';
+		}
+
+		$criteria->order = "CASE t.status WHEN 'Em andamento' THEN 1 ELSE 2 END, t.data_hora_inicio DESC";
 
 		return new CActiveDataProvider($this, array(
 			'criteria' => $criteria,
