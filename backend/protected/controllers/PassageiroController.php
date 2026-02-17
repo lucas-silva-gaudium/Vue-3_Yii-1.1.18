@@ -40,8 +40,19 @@ class PassageiroController extends Controller
 	 */
 	public function actionView($id)
 	{
+		$corridasDataProvider = new CActiveDataProvider('Corrida', array(
+			'criteria' => array(
+				'condition' => 'passageiro_id = :passageiroId',
+				'params'    => array(':passageiroId' => $id),
+				'order'     => 'data_hora_inicio DESC',
+				'limit'     => 5,
+			),
+			'pagination' => false,
+		));
+
 		$this->render('view', array(
 			'model' => $this->loadModel($id),
+			'corridasDataProvider' => $corridasDataProvider,
 		));
 	}
 
@@ -58,6 +69,7 @@ class PassageiroController extends Controller
 
 		if (isset($_POST['Passageiro'])) {
 			$model->attributes = $_POST['Passageiro'];
+			$model->status = 'A';
 			$model->data_hora_status = date('Y-m-d H:i:s');
 			if ($model->save())
 				$this->redirect(array('view', 'id' => $model->id));
@@ -88,6 +100,23 @@ class PassageiroController extends Controller
 		}
 
 		$this->render('update', array(
+			'model' => $model,
+		));
+	}
+
+	public function actionUpdateStatus($id)
+	{
+		$model = $this->loadModel($id);
+		if (isset($_POST['Passageiro']['status'])) {
+			$model->status = $_POST['Passageiro']['status'];
+			$model->data_hora_status = date('Y-m-d H:i:s');
+
+			if ($model->saveAttributes(array('status', 'data_hora_status'))) {
+				$this->redirect(array('view', 'id' => $model->id));
+			}
+		}
+
+		$this->render('updateStatus', array(
 			'model' => $model,
 		));
 	}
